@@ -22,6 +22,8 @@ iframe{
     border-radius: 14px;
     border-style: ridge;
     box-shadow: 0 0 18px rgb(255, 0, 43);
+    margin: 0px;
+    padding: 0px;
 }
 
 p{
@@ -30,9 +32,37 @@ p{
     font-size: 22px;
 }
 
+.league a {
+    border: none;
+  }
+
+  .league img {
+    border-radius: 100%;
+    box-shadow: 0 0 24px rgb(0, 255, 81);
+    margin: 38px;
+  }
+
 html{
     scroll-behavior: smooth;
 }
+
+.arena a {
+    background-color: #ff3535;
+    border-radius: 20px;
+    font-family:'poppins' sans-serif;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+  }
+
+  .arena :hover{
+    background-color: #ffd900;
+    color: rgb(255, 255, 255);
+  }
 
 ul{
     list-style: none;
@@ -41,7 +71,7 @@ a{
     text-decoration: none;
 }
 body{
-    background-color: whitesmoke;
+    background-color: rgb(228, 228, 228);
     font-family: 'poppins',sans-serif;
 }
 

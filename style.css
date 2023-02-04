@@ -39,7 +39,7 @@ p{
   .league img {
     border-radius: 100%;
     box-shadow: 0 0 24px rgb(0, 255, 81);
-    margin: 38px;
+    margin: 0px;
   }
 
 html{
@@ -47,6 +47,7 @@ html{
 }
 
 .arena a {
+    display:inline;
     background-color: #ff3535;
     border-radius: 20px;
     font-family:'poppins' sans-serif;

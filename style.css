@@ -5,6 +5,11 @@
     padding: 0;
     margin: 0;
 }
+
+hr{
+margin: 0px;
+}
+
 h1{
     color:#ff0077;
     font-family: 'poppins',sans-serif;

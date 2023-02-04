@@ -29,7 +29,8 @@ iframe{
 p{
     color:#2d2d2d;
     font-family: 'poppins',sans-serif;
-    font-size: 22px;
+    font-size: 20px;
+    margin: 8px;
 }
 
 .league a {

@@ -11,10 +11,14 @@ h1{
     text-shadow: 0 0 2px #ff0022;
 }
 
+.middle{
+    margin: 8px;
+}
+
 h3{
-    color:#fefefe;
+    color:#ff0077;
     font-family: 'poppins',sans-serif;
-    text-shadow: 0 0 2px #f6f6f6;
+    text-shadow: 0 0 2px #ff0062;
     font-size: 20px;
 }
 
@@ -53,7 +57,7 @@ html{
 
 .post img{
     border-radius: 12px;
-    box-shadow: 0 0 8px rgba(0, 255, 140, 0.804);
+    box-shadow: 0 0 8px rgb(255, 0, 89);
 }
 
 .post{
@@ -67,7 +71,7 @@ p4{
 
 .arena a {
     display:inline;
-    background-color: #212121d7;
+    background-color: #ff006f;
     border-radius: 20px;
     font-family:'poppins' sans-serif;
     font-size: 22px;
@@ -80,7 +84,7 @@ p4{
   }
 
   .arena :hover{
-    background-color: #ffd900;
+    background-color: #00ff8c;
     color: rgb(255, 255, 255);
   }
 
@@ -91,12 +95,12 @@ a{
     text-decoration: none;
 }
 body{
-    background-color: rgb(64, 64, 64);
+    background-color: rgb(32, 32, 32);
     font-family: 'poppins',sans-serif;
 }
 
 .container{
-    max-width: 968px;
+    max-width: 970px;
     margin: auto;
 }
 
@@ -154,6 +158,7 @@ body{
 .nav_list{
     justify-content: space-around;
     column-gap: 3rem;
+    margin: 8px;
 }
 
 .nav_link{

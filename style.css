@@ -15,6 +15,15 @@ h1{
     margin: 8px;
 }
 
+.shorts{
+    display: flex;
+    margin:1px;
+}
+
+.shorts iframe{
+    margin: 10px;
+}
+
 h3{
     color:#ff0077;
     font-family: 'poppins',sans-serif;
@@ -33,7 +42,7 @@ iframe{
 p{
     color:#f7f7f7;
     font-family: 'poppins',sans-serif;
-    font-size: 22px;
+    font-size: 19px;
 }
 
 .header{
@@ -48,7 +57,7 @@ p{
   .league img {
     border-radius: 100%;
     box-shadow: 0 0 24px rgb(255, 0, 81);
-    margin: 0px;
+    margin: 25px;
   }
 
 html{
@@ -56,8 +65,9 @@ html{
 }
 
 .post img{
-    border-radius: 12px;
+    border-radius: 4px;
     box-shadow: 0 0 8px rgb(255, 0, 89);
+    margin: 35px;
 }
 
 .post{
@@ -97,6 +107,7 @@ a{
 body{
     background-color: rgb(32, 32, 32);
     font-family: 'poppins',sans-serif;
+    margin: 2px;
 }
 
 .container{
@@ -131,7 +142,7 @@ body{
 
 .nav{
     height: 4.5rem;
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
 }

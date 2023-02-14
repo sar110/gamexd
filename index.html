@@ -11,13 +11,90 @@
     <title>GameXD</title>
 </head>
 <style>
-body {
-      background-repeat: repeat-y;
-      background-size: cover;
-      background-attachment: fixed;
-      
+    body {
+        background-repeat: repeat-y;
+        background-size: cover;
+        background-attachment: fixed;
+
+    }
+
+    /* Import Google font - Poppins */
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+
+    ::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #000000;
+        border-radius: 25px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #ff006a;
+        border-radius: 25px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #ff1246;
+    }
+
+    .contain {
+        display: flex;
+        gap: 12px;
+        max-width: 400px;
+        width: 100%;
+        background: #15151500;
+        border-radius: 18px;
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        scroll-padding: 30px;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .contain .card {
+        display: flex;
+        flex: 0 0 100%;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 12px;
+        background: #e3e3e3;
+        scroll-snap-align: start;
+    }
+
+    .card .image {
+        height: 150px;
+        width: 150px;
+        background: #ff0090;
+        border-radius: 50%;
+    }
+
+    .image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #ff0051;
+    }
+
+    .card h2 {
+        margin-top: 25px;
+        color: #333;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .card p {
+        margin-top: 4px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #333;
+        text-align: center;
     }
 </style>
+
 <body background="backgroundimage110110.png">
     <header class="header" id="header">
         <nav class="nav container">
@@ -50,18 +127,19 @@ body {
     <br>
     <br>
     <br>
+    <br>
+    <br>
     <div class="arena">
-        <a href="#">Arena</a>
-        <a href="stream.html">Streamers</a>
+        <a href="#">arena</a>
+        <a href="#">events</a>
     </div>
-    <br>
     <div class="league">
-        <a href="minecraft.html"><img src="minelogo420.jpg" width="60" align="right"></a>
+        <a href="minecraft.html"><img src="minelogo420.jpg" width="50" align="right"></a>
     </div>
-    <br>
-    <br>
     <br>
     <h3><b>#Latest Ones</b></h3>
+   
+    <br>
     <hr>
     <br>
     <div class="middle">
@@ -82,10 +160,49 @@ body {
         <div class="shorts">
             <iframe width="140" height="220" src="https://www.youtube.com/embed/EKtIBaWnKGc" allow=" web-share"
                 allowfullscreen></iframe>
-                <iframe width="140" height="220" src="https://www.youtube.com/embed/yMb6V30oaSA"   allow=" web-share" allowfullscreen></iframe>
+            <iframe width="140" height="220" src="https://www.youtube.com/embed/yMb6V30oaSA" allow=" web-share"
+                allowfullscreen></iframe>
         </div>
         <br>
         <hr>
+        <br>
+        <section class="contain">
+            <div class="card">
+                <div class="image">
+                    <a href="https://www.youtube.com/@victorylovergaming5161">
+                        <img src="victorylovergaming.jpg">
+                    </a>
+                </div>
+                <h2>Victor Lover Gaming</h2>
+                <p>Free 🔥 Fire Video Creator</p>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <a href="https://www.youtube.com/@LIONXGames5260">
+                    <img src="20230129_113415_0000.png">
+                </a>
+                </div>
+                <h2>LION X GAMES</h2>
+                <p>#shorts Video Creator</p>
+            </div>
+            <!-- <div class="card">
+                <div class="image">
+                    <!--<img src="images/img3.jpg" alt="" />-->
+                <!-- </div>
+                <h2>Someone Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <!--<img src="images/img4.jpg" alt="" />-->
+                <!-- </div>
+                <h2>Someone Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>
+            </div> --> --> -->
+        </section>
+        <br>
+        <hr>
+        <br>
         <br>
         <iframe width="460" height="240" src="https://www.youtube.com/embed/AbCot2ADQck"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

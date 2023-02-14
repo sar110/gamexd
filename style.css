@@ -1,37 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-h1{
-    color:#ff0077;
-    font-family: 'poppins',sans-serif;
+
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: #ff0077;
+    font-family: 'poppins', sans-serif;
     text-shadow: 0 0 2px #ff0022;
 }
 
-.middle{
+.middle {
     margin: 8px;
 }
 
-.shorts{
+.shorts {
     display: flex;
-    margin:1px;
+    margin: 1px;
 }
 
-.shorts iframe{
+.shorts iframe {
     margin: 10px;
 }
 
-h3{
-    color:#ff0077;
-    font-family: 'poppins',sans-serif;
+h3 {
+    color: #ff0077;
+    font-family: 'poppins', sans-serif;
     text-shadow: 0 0 2px #ff0062;
     font-size: 20px;
 }
 
-iframe{
+iframe {
     border-radius: 14px;
     border-style: ridge;
     box-shadow: 0 0 18px rgb(255, 0, 43);
@@ -39,51 +50,53 @@ iframe{
     padding: 0px;
 }
 
-p{
-    color:#f7f7f7;
-    font-family: 'poppins',sans-serif;
-    font-size: 19px;
+p {
+    color: #f4f4f4;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
 }
 
-.header{
+.header {
     box-shadow: 0 0 12px rgba(255, 0, 68, 0.833);
 }
 
 .league a {
     border: none;
     margin: 0px;
-  }
+}
 
-  .league img {
+.league img {
     border-radius: 100%;
-    box-shadow: 0 0 24px rgb(255, 0, 81);
+    box-shadow: 0 0 24px rgb(0, 255, 153);
     margin: 25px;
-  }
+}
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.post img{
+.post img {
     border-radius: 4px;
     box-shadow: 0 0 8px rgb(255, 0, 89);
     margin: 35px;
 }
 
-.post{
+.post {
     margin: 25px;
 }
-p4{
-    color:#ffffff;
-    font-family: 'poppins',sans-serif;
+
+p4 {
+    color: #ffffff;
+    font-family: 'poppins', sans-serif;
     font-size: 18px;
 }
 
+
 .arena a {
-    display:inline;
+    display: inline;
     background-color: #ff006f;
     border-radius: 20px;
-    font-family:'poppins' sans-serif;
+    font-family: 'poppins' sans-serif;
     font-size: 22px;
     color: rgb(255, 255, 255);
     margin: 10px;
@@ -91,46 +104,49 @@ p4{
     text-decoration: none;
     letter-spacing: 3px;
     text-shadow: 0 0 2px rgb(255, 255, 255);
-  }
+}
 
-  .arena :hover{
-    background-color: #00ff8c;
+.arena :hover {
+    background-color: #ffbf00;
     color: rgb(255, 255, 255);
-  }
+}
 
-ul{
+.line {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-body{
+
+body {
     background-color: rgb(32, 32, 32);
-    font-family: 'poppins',sans-serif;
-    margin: 2px;
+    font-family: 'poppins', sans-serif;
+    margin: 1px;
 }
 
-.container{
-    max-width: 970px;
-    margin: auto;
-}
 
-.section{
+.section {
     padding: 7rem 0 2rem;
 }
 
-.section_title{
+.section_title {
     font-size: 2.5rem;
     color: #ffffff;
     text-align: center;
     margin-bottom: 1.5rem;
 }
 
-.section_height{
+.section_height {
     height: 100vh;
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -140,49 +156,42 @@ body{
     transition: 0.4s;
 }
 
-.nav{
+.container {
+    margin: 4px;
+}
+
+.nav {
     height: 4.5rem;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav_logo{
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 1.25rem;
-}
 
-.nav_name{
+.nav_name {
     font-weight: 600;
-    margin: 4px;
+    margin: 6px;
 }
 
-.nav_icon{
-    font-size: 1.5rem;
-}
 
-.nav_list,.nav_link{
+.nav_list,
+.nav_link {
     display: flex;
 }
 
-.nav_list{
+.nav_list {
     justify-content: space-around;
     column-gap: 3rem;
-    margin: 8px;
+    margin: 10px;
 }
 
-.nav_link{
+.nav_link {
     flex-direction: column;
     align-items: center;
     color: #ffffff;
     row-gap: 0.25rem;
 }
 
-.nav_link :hover{
+.nav_link :hover {
     color: #ff0077;
-}
-
-i.nav_icon{
-    display: none;
 }

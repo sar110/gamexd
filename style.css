@@ -30,7 +30,23 @@ h1 {
     display: flex;
     margin: 1px;
 }
+.on{
+    display:contents;
+}
+.on a {
+    background-color: #00f6a0;
+    border-radius: 14px;
+    margin: 7px;
+    padding: 3px;
+    font-family: 'poppins' sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+    text-align: right;
 
+}
 .shorts iframe {
     margin: 10px;
 }
@@ -93,9 +109,10 @@ p4 {
 }
 
 p7 {
-    color: #f4f4f4;
+    color: #ffffff;
     font-family: 'poppins', sans-serif;
     font-size: 22px;
+    text-shadow: 0 0 2px rgb(255, 255, 255);
 }
 
 .arena a {
@@ -131,7 +148,7 @@ a {
 }
 
 body {
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(4, 4, 4);
     font-family: 'poppins', sans-serif;
     margin: 1px;
 }
@@ -157,7 +174,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(10, 10, 10);
     z-index: 100;
     transition: 0.4s;
 }

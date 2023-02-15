@@ -33,20 +33,7 @@ h1 {
 .on{
     display:contents;
 }
-.on a {
-    background-color: #00f6a0;
-    border-radius: 14px;
-    margin: 7px;
-    padding: 3px;
-    font-family: 'poppins' sans-serif;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    letter-spacing: 3px;
-    text-shadow: 0 0 2px rgb(255, 255, 255);
-    text-align: right;
 
-}
 .shorts iframe {
     margin: 10px;
 }

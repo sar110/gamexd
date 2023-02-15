@@ -43,10 +43,10 @@ h3 {
 }
 
 iframe {
-    border-radius: 14px;
+    border-radius: 8px;
     border-style: ridge;
     box-shadow: 0 0 18px rgb(255, 0, 43);
-    margin: 2px;
+    margin: 0px;
     padding: 0px;
     border-color: black;
 }
@@ -60,6 +60,8 @@ p7 {
     color: #f4f4f4;
     font-family: 'poppins', sans-serif;
     font-size: 22px;
+margin:12px;
+padding:0px;
 }
 .header {
     box-shadow: 0 0 12px rgba(255, 0, 68, 0.833);

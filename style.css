@@ -19,7 +19,7 @@
 h1 {
     color: #ff0077;
     font-family: 'poppins', sans-serif;
-    text-shadow: 0 0 2px #ff0022;
+    text-shadow: 0 0 12px rgb(255, 0, 89);
 }
 
 .middle {
@@ -114,6 +114,8 @@ p7 {
     text-decoration: none;
     letter-spacing: 3px;
     text-shadow: 0 0 2px rgb(255, 255, 255);
+    box-shadow: 0 0 18px rgb(255, 0, 38);
+
 }
 
 .arena :hover {
@@ -132,12 +134,6 @@ ul {
 
 a {
     text-decoration: none;
-}
-
-body {
-    background-color: #141414;
-    font-family: 'poppins', sans-serif;
-    margin: 1px;
 }
 
 

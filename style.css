@@ -44,7 +44,15 @@ h3 {
     text-shadow: 0 0 2px #ff0062;
     font-size: 20px;
 }
-
+video{
+    border-radius: 14px;
+    border-style: ridge;
+    box-shadow: 0 0 18px rgb(255, 0, 43);
+    margin: 0px;
+    padding: 0px;
+    border-color: black;
+    background-color: rgb(15, 15, 15);
+}
 iframe {
     border-radius: 14px;
     border-style: ridge;

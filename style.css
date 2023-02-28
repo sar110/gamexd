@@ -103,7 +103,6 @@ p7 {
 }
 
 .arena a {
-    display: inline;
     background-color: #ff006f;
     border-radius: 20px;
     font-family: 'poppins' sans-serif;
@@ -115,7 +114,6 @@ p7 {
     letter-spacing: 3px;
     text-shadow: 0 0 2px rgb(255, 255, 255);
     box-shadow: 0 0 18px rgb(255, 0, 38);
-
 }
 
 .arena :hover {

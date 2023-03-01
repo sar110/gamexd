@@ -52,6 +52,7 @@ video{
     padding: 0px;
     border-color: rgb(245, 0, 78);
     background-color: rgb(15, 15, 15);
+border: 2px;
 }
 iframe {
     border-radius: 14px;

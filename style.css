@@ -21,7 +21,9 @@ h1 {
     font-family: 'poppins', sans-serif;
     text-shadow: 0 0 12px rgb(255, 0, 89);
 }
-
+hr{
+margin:0px;
+}
 .middle {
     margin: 8px;
 }
@@ -48,7 +50,7 @@ video{
     border-radius: 14px;
     border-style: ridge;
     box-shadow: 0 0 18px rgb(255, 0, 43);
-    margin: 0px;
+    margin: 1px;
     padding: 0px;
     border-color: rgb(245, 0, 78);
     background-color: rgb(15, 15, 15);

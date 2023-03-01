@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
 
 /* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -47,8 +48,7 @@ video{
     margin: 1px;
     padding: 0px;
     border-color: rgb(245, 0, 78);
-    background-color: rgb(15, 15, 15);
-border: 2px red;
+border: 2px;
 }
 iframe {
     border-radius: 14px;
@@ -63,7 +63,7 @@ p {
     color: #f4f4f4;
     font-family: 'poppins', sans-serif;
     font-size: 18px;
-margin:2px;
+margin:4px;
 }
 
 .header {
@@ -99,6 +99,7 @@ p4 {
     color: #ffffff;
     font-family: 'poppins', sans-serif;
     font-size: 18px;
+margin:4px;
 }
 
 p7 {
@@ -106,6 +107,7 @@ p7 {
     font-family: 'poppins', sans-serif;
     font-size: 22px;
     text-shadow: 0 0 2px rgb(255, 255, 255);
+margin:4px;
 }
 
 .arena a {

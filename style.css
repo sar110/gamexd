@@ -50,7 +50,7 @@ video{
     box-shadow: 0 0 18px rgb(255, 0, 43);
     margin: 0px;
     padding: 0px;
-    border-color: black;
+    border-color: rgb(245, 0, 78);
     background-color: rgb(15, 15, 15);
 }
 iframe {

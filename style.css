@@ -27,8 +27,9 @@ h1 {
     display: flex;
     margin: 1px;
 }
-.on{
-    display:contents;
+
+.on {
+    display: contents;
 }
 
 .shorts iframe {
@@ -41,30 +42,32 @@ h3 {
     text-shadow: 0 0 2px #ff0062;
     font-size: 22px;
 }
-video{
+
+video {
     border-radius: 14px;
     border-style: ridge;
     box-shadow: 0 0 18px rgb(255, 0, 43);
     margin: 1px;
     padding: 0px;
     border-color: rgb(245, 0, 78);
-border: 2px;
-background-color: black;
+    border: 2px;
+    background-color: black;
 }
+
 iframe {
-    border-radius: 14px;
+    border-radius: 8px;
     border-style: ridge;
-    box-shadow: 0 0 18px rgb(255, 0, 43);
-    margin: 0px;
+    box-shadow: 0 0 18px rgb(255, 0, 55);
+    margin: 3px;
     padding: 0px;
-    border-color: black;
+    border-color: rgb(255, 0, 85);
 }
 
 p {
     color: #f4f4f4;
     font-family: 'poppins', sans-serif;
     font-size: 18px;
-margin:4px;
+    margin: 4px;
 }
 
 .header {
@@ -100,7 +103,7 @@ p4 {
     color: #ffffff;
     font-family: 'poppins', sans-serif;
     font-size: 18px;
-margin:4px;
+    margin: 4px;
 }
 
 p7 {
@@ -108,7 +111,7 @@ p7 {
     font-family: 'poppins', sans-serif;
     font-size: 22px;
     text-shadow: 0 0 2px rgb(255, 255, 255);
-margin:4px;
+    margin: 4px;
 }
 
 .arena a {

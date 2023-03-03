@@ -54,13 +54,24 @@ video {
     background-color: black;
 }
 
-iframe {
-    border-radius: 8px;
+
+.frmo{
+    border-radius: 14px;
     border-style: ridge;
-    box-shadow: 0 0 18px rgb(255, 0, 55);
-    margin: 3px;
+    margin: 0px;
     padding: 0px;
-    border-color: rgb(255, 0, 85);
+    background-color: rgba(0, 0, 0, 0.705);
+    border:none;
+    box-shadow: 0 0 18px rgb(0, 0, 0);
+}
+
+
+iframe {
+    border-radius: 14px;
+    border-style: ridge;
+    margin: 0px;
+    padding: 0px;
+    border-color: rgb(0, 0, 0);
 }
 
 p {

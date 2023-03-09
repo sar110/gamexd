@@ -12,6 +12,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.tom{
+    background-color: rgba(0, 255, 140, 0.832);
+    box-shadow:  0 0 18px rgb(0, 0, 0);
+    display: flex;
+}
 
 h1 {
     color: #ff0077;
@@ -46,7 +51,7 @@ h3 {
 video {
     border-radius: 14px;
     border-style: ridge;
-    box-shadow: 0 0 18px rgb(255, 0, 43);
+    box-shadow:  0 0 18px rgb(255, 0, 115);
     margin: 1px;
     padding: 0px;
     border-color: rgb(245, 0, 78);
@@ -78,7 +83,9 @@ p {
     color: #f4f4f4;
     font-family: 'poppins', sans-serif;
     font-size: 18px;
-    margin: 4px;
+    margin: 0px;
+    text-shadow: 0 0 2px #000000;
+    display: flex;
 }
 
 .header {
@@ -157,21 +164,6 @@ a {
     text-decoration: none;
 }
 
-
-.section {
-    padding: 7rem 0 2rem;
-}
-
-.section_title {
-    font-size: 2.5rem;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.section_height {
-    height: 100vh;
-}
 
 .header {
     position: fixed;

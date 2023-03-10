@@ -39,6 +39,7 @@ body {
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-size: cover;
+background-color: black; 
 }
 
 .container {

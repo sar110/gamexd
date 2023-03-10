@@ -3,428 +3,108 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameXD</title>
 </head>
-<style>
-    body {
-        background-repeat: repeat-y;
-        background-attachment: fixed;
-        background-size: cover;
-    }
 
-    * {
-        margin: 0px;
-    }
-
-    /* Import Google font - Poppins */
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
-
-
-    ::-webkit-scrollbar {
-        height: 8px;
-    }
-
-    ::-webkit-scrollbar-track {
-        background: #000000;
-        border-radius: 25px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #ff006a;
-        border-radius: 25px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: #ff1246;
-    }
-
-    .contain {
-        display: flex;
-        margin: 0px;
-        gap: 12px;
-        max-width: 800px;
-        width: 100%;
-        background: #15151500;
-        border-radius: 18px;
-        scroll-snap-type: x mandatory;
-        overflow-x: scroll;
-        scroll-padding: 30px;
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-    }
-
-    .contain .card {
-        display: flex;
-        flex: 0 0 100%;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 12px;
-        background: #e7e7e7;
-        scroll-snap-align: start;
-    }
-
-    .card .image {
-        height: 150px;
-        width: 150px;
-        background: #ff0090;
-        border-radius: 50%;
-    }
-
-    .image img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 50%;
-        border: 5px solid #ff0051;
-        box-shadow: 0 0 18px rgb(245, 0, 78);
-    }
-
-    .card h2 {
-        margin-top: 25px;
-        color: #df0034f9;
-        font-size: 22px;
-        font-weight: 600;
-    }
-
-    .card p {
-        margin-top: 4px;
-        font-size: 18px;
-        font-weight: 400;
-        color: #111111;
-        text-align: center;
-    }
-
-    .txt img,
-    video {
-        border-radius: 8px;
-        border-style: ridge;
-        box-shadow: 0 0 18px rgb(255, 0, 43);
-        margin: 3px;
-        padding: 0px;
-        border-color: rgb(245, 0, 78);
-    }
-
-    .txt2 img {
-        border-style: ridge;
-        margin: 0px;
-        padding: 0px;
-        border-color: black;
-    }
-
-    .on a {
-        background-color: #ff005d;
-        border-radius: 14px;
-        margin: 7px;
-        padding: 3px;
-        font-family: 'poppins' sans-serif;
-        font-size: 15px;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        letter-spacing: 3px;
-        text-shadow: 0 0 2px rgb(0, 0, 0);
-        text-align: right;
-        box-shadow: 0 0 12px rgb(252, 0, 29);
-    }
-
-    html {
-    scroll-behavior: smooth;
-}
-
-
-.head {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    transition: 0.4s;
-}
-button {
-    width: 140px;
-    border: 0;
-    padding: 12px 10px;
-    outline: none;
-    color: #fff;
-    background: linear-gradient(to right, #fb5283, #ff3527);
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgb(228, 0, 46);
-    transition: width 0.5s;
-}
-
-button img {
-    width: 30px;
-    display: none;
-}
-
-button:hover img {
-    display: block;
-}
-
-
-button:hover {
-    width: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.col-1::after {
-    content: '';
-    width: 10px;
-    height: 57%;
-    position: absolute;
-    background: linear-gradient(#ff469f, #ff6062);
-    left: -40px;
-    top: 8px;
-}
-
-.col-2 {
-    flex-basis: 60%;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.col-2 .controller {
-    width: 90%;
-}
-
-#menulist{
-    overflow: hidden;
-    transition: 0.5s;
-}
-
-.color-box {
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-radius: 20px 0 0 20px;
-    height: 100%;
-    width: 80%;
-    z-index: -1;
-    background: linear-gradient(#ff54a2, #ff575a);
-    transform: translateX(150px);
-}
-
-
-
-* {
-    margin: 0;
-    font-family: 'poppins', sans-serif;
-    padding: 0;
-}
-
-
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 100px 0;
-}
-
-.col-1 {
-    flex-basis: 40%;
-    position: relative;
-    margin-left: 50px;
-}
-
-
-.col-1 h2 {
-    font-size: 62px;
-    color: #f4004d;
-    text-shadow: 0 0 4px #f60420;
-}
-
-.col-1 p {
-    font-size: 24px;
-    color: #ffffff;
-    text-shadow: 0 0 2px #ffffff;
-    font-weight: 100;
-    margin: 30px 0;
-}
-
-p2 {
-    font-size: 20px;
-    color: #ffffff;
-}
-
-
-.txt{
-    background: linear-gradient(to right, #ff0048db, #ff3527f0);
-}
-
-
-
-button {
-    width: 140px;
-    border: 0;
-    padding: 12px 10px;
-    outline: none;
-    color: #fff;
-    background: linear-gradient(to right, #fb5283, #ff3527);
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgb(228, 0, 46);
-    transition: width 0.5s;
-    font-size: 18px;
-}
-
-button img {
-    width: 30px;
-    display: none;
-}
-
-button:hover img {
-    display: block;
-}
-
-
-button:hover {
-    width: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.col-1::after {
-    content: '';
-    width: 10px;
-    height: 100%;
-    position: absolute;
-    background: linear-gradient(#ff469f, #ff6062);
-    left: -40px;
-    top: 8px;
-}
-
-.col-2 {
-    flex-basis: 60%;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.col-2 .controller {
-    width: 90%;
-}
-
-#menulist{
-    overflow: hidden;
-    transition: 0.5s;
-}
-
-.color-box {
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-radius: 20px 0 0 20px;
-    height: 100%;
-    width: 80%;
-    z-index: -1;
-    background: linear-gradient(#ff54a2, #ff575a);
-    transform: translateX(150px);
-}
-
-iframe{
-    border-radius: 8px;
-        border-style: ridge;
-        box-shadow: 0 0 18px rgb(255, 0, 43);
-       
-    
-        border-color: rgb(245, 0, 78);
-    margin: 0px;
-    padding: 0px;
-    box-shadow: 0 0 30px rgb(255, 0, 68);
-}
-</style>
 <body background="1000033150_213fa612b6c517169710ea3a243d6ded-3_7_2023, 2_21_10 PM.png">
 
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#">
-                <h1><b>GameXD</b></h1>
-            </a>
-            <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list">
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <i class='bx bx-message-dots'></i>
-                            <span class="nav_name">
-                                Discord
-                            </span>
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="help.html" class="nav_link">
-                            <i class='bx bx-help-circle'></i>
-                            <span class="nav_name">
-                                Help
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    <div class="navbar">
+        <div class="og">
+            <img src="A_letter_tech_logo__1_-removebg-preview.png" class="logo">
+        </div>
+        <h3>GameXD</h3>
+        <nav>
+            <ul id="menulist">
+                <li><a href=""><b>Discord</b></a></li>
+                <li><a href="help.html"><b>Help</b></a></li>
+            </ul>
         </nav>
-    </header>
-    <br>
-    <br>
-    <br>
-    <div class="txt2">
-        <img src="IMG_20230307_144330.png" width="486" height="90">
+
+        <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+
     </div>
-    <br>
-    <!-- <p><b></b></p> -->
-    <br>
+
+    <div class="container">
+        <div class="txt2">
+            <img src="IMG_20230307_144330.png" width="400" height="90">
+        </div>
+        <br>
     <div class="arena">
         <a href="#">esports</a>
         <a href="#">events</a>
     </div>
-    <div class="container">
         <div class="row">
             <div class="col-1">
                 <h2>
                     GameXD
                 </h2>
-                <p>Play With Strategy</p>
+                <br>
+                <p2><b>Play With Strategy</b></p2>
+                <br>
+                <br>
                 <button type="button">Let's go<img src="arrow.png"></button>
             </div>
+            <div class="col-2">
+                <img src="controller.png" class="controller">
+                <div class="color-box"></div>
+            </div>
         </div>
+        <!-- <div class="txt">
+            <p2><b>
+
+                </b></p2>
+        </div> -->
+        <br>
+        <div class="orders">
+            <iframe width="315" height="155" src="https://www.youtube.com/embed/P1Vo33FTL-c" title="Play With Robert"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <br>
+            <p3><b>Play With Robert || Live Stream</b></p3>
         </div>
-       
-    <div class="txt2">
-        <img src="20230307_160600_0002.png" width="486" height="120">
+        <br>
+        <br>
+        <div class="orders">
+            <iframe width="315" height="155" src="https://www.youtube.com/embed/_HCuCNlLZRM" title="Robert Is Live"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <br>
+            <p3><b>Robert Is Live || Live Stream</b></p3>
+        </div>
+        <br>
+        <br>
+        <div class="orders">
+            <iframe width="315" height="155" src="https://www.youtube.com/embed/Xwxvz_aRdZ4"
+                title="Slow-Motion Montage❗Free Fire🔥❗Victory Lover Gaming❗" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+                <br>
+                <p3><b>Slow-Motion Montage || Free 🔥 Fire</b></p3>
+        </div>
     </div>
-    <div class="hold">
-    <iframe width="486" height="240" src="https://www.youtube.com/embed/xaeRmsHewNg"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    <br>
-    <p><b>Talk With Robert</b></p>
-    </div>
-    <br>
-    <div class="hold">
-    <iframe width="480" height="240" src="https://www.youtube.com/embed/Xwxvz_aRdZ4"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    <br>
-    <p><b>Slow-Motion Montage ❗ Victory Lover Gaming</b></p>
-</div>
-    <br>
-<div class="hold">
-    <iframe width="480" height="240" src="https://www.youtube.com/embed/RZ1AnAcbqI4"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    <br>
-    <p><b>FF DAKU MONTAGE ♦ TRAINING GROUND♦</b></p>
+    <div class="img">
+
     </div>
     <br>
-    </div>
+    <br>
+
+    <script>
+        var menulist = document.getElementById("menulist");
+
+        menulist.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "130px";
+            }
+
+            else {
+                menulist.style.maxHeight = "0px";
+
+            }
+        }
+    </script>
 </body>
 
 </html>

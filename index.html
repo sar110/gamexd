@@ -3,217 +3,80 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameXD</title>
 </head>
-<style>
-    body {
-        background-repeat: repeat-y;
-        background-attachment: fixed;
-        background-size: cover;
-    }
 
-    * {
-        margin: 0px;
-    }
-
-    /* Import Google font - Poppins */
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
-
-
-    ::-webkit-scrollbar {
-        height: 8px;
-    }
-
-    ::-webkit-scrollbar-track {
-        background: #000000;
-        border-radius: 25px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #ff006a;
-        border-radius: 25px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: #ff1246;
-    }
-
-    .contain {
-        display: flex;
-        margin: 0px;
-        gap: 12px;
-        max-width: 800px;
-        width: 100%;
-        background: #15151500;
-        border-radius: 18px;
-        scroll-snap-type: x mandatory;
-        overflow-x: scroll;
-        scroll-padding: 30px;
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-    }
-
-    .contain .card {
-        display: flex;
-        flex: 0 0 100%;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 12px;
-        background: #e7e7e7;
-        scroll-snap-align: start;
-    }
-
-    .card .image {
-        height: 150px;
-        width: 150px;
-        background: #ff0090;
-        border-radius: 50%;
-    }
-
-    .image img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 50%;
-        border: 5px solid #ff0051;
-        box-shadow: 0 0 18px rgb(245, 0, 78);
-    }
-
-    .card h2 {
-        margin-top: 25px;
-        color: #df0034f9;
-        font-size: 22px;
-        font-weight: 600;
-    }
-
-    .card p {
-        margin-top: 4px;
-        font-size: 18px;
-        font-weight: 400;
-        color: #111111;
-        text-align: center;
-    }
-
-    .txt img,
-    video {
-        border-radius: 8px;
-        border-style: ridge;
-        box-shadow: 0 0 18px rgb(255, 0, 43);
-        margin: 3px;
-        padding: 0px;
-        border-color: rgb(245, 0, 78);
-    }
-
-    .txt2 img {
-        border-style: ridge;
-        margin: 0px;
-        padding: 0px;
-        border-color: black;
-    }
-
-    .on a {
-        background-color: #ff005d;
-        border-radius: 14px;
-        margin: 7px;
-        padding: 3px;
-        font-family: 'poppins' sans-serif;
-        font-size: 15px;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        letter-spacing: 3px;
-        text-shadow: 0 0 2px rgb(0, 0, 0);
-        text-align: right;
-        box-shadow: 0 0 12px rgb(252, 0, 29);
-    }
-</style>
-
-<body
-    background="HD-wallpaper-game-tech-neon-playstation-console-controller-gamer-gaming-glow-neon-technology-thumbnail (1).png">
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#">
-                <h1><b>GameXD</b></h1>
-            </a>
-            <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list">
-                    <li class="nav_item">
-                        <a href="community.html" class="nav_link">
-                            <i class='bx bx-message-dots'></i>
-                            <span class="nav_name">
-                                COMMUNITY
-                            </span>
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="help.html" class="nav_link">
-                            <i class='bx bx-help-circle'></i>
-                            <span class="nav_name">
-                                Help
-                            </span>
-                        </a>
-                    </li>
-                </ul>
+<body>
+   <div class="head">
+        <div class="navbar">
+            <div class="og">
+                <img src="A letter tech logo (1).png" class="logo">
             </div>
-        </nav>
-    </header>
-    <br>
-    <br>
-    <br>
-    <div class="txt2">
-        <img src="IMG_20230307_144330.png" width="486" height="90">
+            <nav>
+                <ul id="menulist">
+                    <li><a href=""><b>eSpots</b></a></li>
+                    <li><a href=""><b>Discord</b></a></li>
+                    <li><a href="help.html"><b>Help</b></a></li>
+                </ul>
+            </nav>
+
+            <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
     </div>
     <br>
-    <!-- <p><b></b></p> -->
     <br>
-    <div class="arena">
-        <a href="#">arena</a>
-        <a href="#">events</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <h2>
+                    GameXD
+                </h2>
+                <p>Play With Strategy</p>
+                <button type="button">Let's go<img src="arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="controller.png" class="controller">
+                <div class="color-box"></div>
+            </div>
+        </div>
+        <div class="txt">
+            <p2><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum culpa alias
+                    praesentium omnis hic voluptate consectetur voluptas, assumenda nostrum vero fugit quaerat, sequi
+                    dolorem ducimus sapiente similique, officia distinctio!</b></p2>
+        </div>
+        <br>
+        <div class="img">
+            <img src="20230307_160600_0002.png" width="486" height="90">
+        </div>
+        <br>
     </div>
+    <hr>
+    <br>
     <br>
 
-    <div class="txt">
-        <iframe width="486" height="240" src="https://www.youtube.com/embed/NiIcE19YYCg"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-    </div>
-    <div class="on">
-        <p7>Spring Special Tournament</p7>
-    </div>
-    <br>
-    <br>
-    <div class="tom">
-<p>GameXD Provide Free Tournament For Their Members Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro voluptates expedita harum perspiciatis nulla aspernatur, labore accusantium perferendis doloremque eveniet incidunt cumque quasi? Labore amet explicabo voluptates rem quam. Minus?</p>
-    </div>
-    <br>
-    <br>
-    <div class="txt2">
-        <img src="20230307_160600_0002.png" width="486" height="110">
-    </div>
-    <br>
-    <iframe width="486" height="240" src="https://www.youtube.com/embed/xaeRmsHewNg"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    <br>
-    <p><b>Talk With Robert</b></p>
-    <br>
-    <iframe width="480" height="240" src="https://www.youtube.com/embed/Xwxvz_aRdZ4"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    <br>
-    <p><b>Slow-Motion Montage ❗ Victory Lover Gaming</b></p>
+    <script>
+        var menulist = document.getElementById("menulist");
 
-    <br>
+        menulist.style.maxHeight = "0px";
 
-    <iframe width="480" height="240" src="https://www.youtube.com/embed/RZ1AnAcbqI4"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    <br>
-    <p><b>FF DAKU MONTAGE ♦ TRAINING GROUND♦</b></p>
+        function togglemenu() {
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "130px";
+            }
 
-    <br>
+            else {
+                menulist.style.maxHeight = "0px";
+
+            }
+        }
+    </script>
 </body>
 
 </html>

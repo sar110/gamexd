@@ -72,7 +72,7 @@ background-color: black;
 .menu-icon {
     width: 25px;
     cursor: pointer;
-    margin: 0px;
+    margin: 10px;
 }
 
 nav {
@@ -153,8 +153,8 @@ iframe {
 
 h3 {
     font-size: 25px;
-    color: #ffffff;
-    text-shadow: 0 0 2px #ffffff;
+    color:  #f4004d;
+    text-shadow: 0 0 2px  #f4004d;
 }
 
 

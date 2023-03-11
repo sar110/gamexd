@@ -15,9 +15,18 @@ iframe{
     border-radius: 6px;
     border-color: #ff0077;
     border-style: ridge;
-    margin-left: 3px;
-    margin-right: 3px;
     padding: 0px;
+}
+
+
+.img2 img{
+    box-shadow: 0 0 20px #ff0055;
+    border-radius: 6px;
+    border-color: #ff0077;
+    border-style: ridge;
+    padding: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 body {

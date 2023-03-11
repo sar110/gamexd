@@ -1,45 +1,30 @@
 * {
-    margin: 0;
+    margin: 0px;
     font-family: 'poppins', sans-serif;
-    padding: 0;
+    padding: 0px;
 }
 
-a {
-    font-size: 16px;
-    color: #00f4ab;
-    text-shadow: 0 0 2px #04f68d;
-    text-decoration: none;
-}
-
-
-.arena a {
-    background: linear-gradient(to right,#ff609d, #ff3770, #ff2252,#ff0062);
-    border-radius: 20px;
-    font-family: 'poppins' sans-serif;
-    font-size: 22px;
-    color: rgb(255, 255, 255);
-    margin: 10px;
-    padding: 5px;
-    text-decoration: none;
-    letter-spacing: 3px;
-    text-shadow: 0 0 2px rgb(255, 255, 255);
-    box-shadow: 0 0 18px rgb(255, 0, 38);
-}
 
 .orders {
-    background: linear-gradient(to right, #f85c5cdd, #ff0687be, #ff0220bd);
+    background: linear-gradient(#ff6e97, #ff6358,#ff296d);
     padding: 8px 0px;
 }
 
-* {
-    font-family: 'Poppins', sans-serif;
+iframe{
+    box-shadow: 0 0 20px #ff0055;
+    border-radius: 6px;
+    border-color: #ff0077;
+    border-style: ridge;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 0px;
 }
 
 body {
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-size: cover;
-background-color: black; 
+    background-color: rgb(255, 255, 255);
 }
 
 .container {
@@ -60,7 +45,58 @@ background-color: black;
     width: 100%;
     display: flex;
     align-items: center;
-    background-color:black;
+    box-shadow: 0 0 30px #fb8d52;
+    background: linear-gradient(#ff84a7,#ff8d8d, #ff746b);
+}
+
+.info {
+    margin: 6px;
+}
+
+.info2 {
+    margin: 6px;
+}
+
+
+.info3 {
+    margin: 6px;
+}
+
+.info a {
+    background: linear-gradient(to right, #ac52fb, #6f27ff);
+    text-decoration: none;
+    padding: 6px 6px;
+    color: #ffffff;
+    box-shadow: 0 0 6px #3300ff;
+    text-shadow: 0 0 2px #ffffff;
+    font-size: 20px;
+    border-radius: 16px;
+}
+
+.infoone {
+    display: flex;
+}
+
+.info2 a {
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    text-decoration: none;
+    padding: 6px 6px;
+    color: #ffffff;
+    box-shadow: 0 0 6px #ff006f;
+    text-shadow: 0 0 2px #ffffff;
+    font-size: 20px;
+    border-radius: 16px;
+}
+
+.info3 a {
+    background: linear-gradient(to right, #fb7452, #ff3907);
+    text-decoration: none;
+    padding: 6px 6px;
+    color: #ffffff;
+    box-shadow: 0 0 6px #ff5e00;
+    text-shadow: 0 0 2px #ffffff;
+    font-size: 20px;
+    border-radius: 16px;
 }
 
 .logo {
@@ -72,7 +108,7 @@ background-color: black;
 .menu-icon {
     width: 25px;
     cursor: pointer;
-    margin: 10px;
+    margin: 0px;
 }
 
 nav {
@@ -111,52 +147,48 @@ nav ul li a:hover {
     margin-left: 50px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 
 .col-1 h2 {
     font-size: 50px;
     color: #f4004d;
     text-shadow: 0 0 2px #f60420;
+    font-family: 'Poppins', sans-serif;
 }
 
 .col-1 p {
     font-size: 16px;
-    color: #131313;
+    color: #0d0d0d;
     font-weight: 100;
 }
 
-.txt2 {
-    margin: 0px;
-    padding: 0px;
-}
 
 p2 {
-    font-size: 20px;
+    font-size: 14px;
     color: #ffffff;
 }
 
 
 p3 {
-    font-size: 16px;
+    font-size: 14px;
     color: #ffffff;
 }
 
 
-iframe {
-    border-radius: 6px;
-    border:2px;
-    border-style: ridge;
-    border-color: rgb(0, 0, 0);
-    margin: 2px;
-    padding: 2px;
-    box-shadow: 0 0 30px rgb(255, 0, 68);
-}
-
 h3 {
     font-size: 25px;
-    color:  #f4004d;
-    text-shadow: 0 0 2px  #f4004d;
+    color: #ffffff;
+    font-family: 'poppins', sans-serif;
+    text-shadow: 0 0 2px #ffffff;
 }
 
+h4 {
+    font-size: 25px;
+    color: #ffbb00;
+    font-family: 'poppins', sans-serif;
+    text-shadow: 0 0 2px #ffaa00;
+}
 
 .img {
     margin: 0px;
@@ -164,7 +196,7 @@ h3 {
 }
 
 .txt {
-    background: linear-gradient(to right, #ff0048b1, #ff0073c6);
+    background: #090909c4;
 }
 
 .head {
@@ -251,7 +283,7 @@ button:hover {
     height: 100%;
     width: 80%;
     z-index: -1;
-    background: linear-gradient(#ff54a2, #ff575a);
+    background: linear-gradient(#ff256e, #ff1d21);
     transform: translateX(150px);
 }
 
@@ -261,7 +293,7 @@ button:hover {
         top: 75px;
         right: 0;
         z-index: 2;
-        background: linear-gradient(#ff54a2, #ff575a);
+        background: linear-gradient(#ff2d7a, #ff006f);
     }
 
     nav ul li {

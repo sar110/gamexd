@@ -10,6 +10,10 @@
     padding: 8px 0px;
 }
 
+.img2 {
+    background: linear-gradient(#ff86a8, #ff8077,#ff6193);
+    padding: 8px 2px;
+}
 iframe{
     box-shadow: 0 0 20px #ff0055;
     border-radius: 6px;
@@ -20,7 +24,7 @@ iframe{
 
 
 .img2 img{
-    box-shadow: 0 0 20px #ff0055;
+    box-shadow: 0 0 30px #ff0000;
     border-radius: 6px;
     border-color: #ff0077;
     border-style: ridge;
@@ -76,7 +80,7 @@ body {
     text-decoration: none;
     padding: 6px 6px;
     color: #ffffff;
-    box-shadow: 0 0 6px #3300ff;
+    box-shadow: 0 0 20px #3300ff;
     text-shadow: 0 0 2px #ffffff;
     font-size: 20px;
     border-radius: 16px;
@@ -91,7 +95,7 @@ body {
     text-decoration: none;
     padding: 6px 6px;
     color: #ffffff;
-    box-shadow: 0 0 6px #ff006f;
+    box-shadow: 0 0 20px #ff006f;
     text-shadow: 0 0 2px #ffffff;
     font-size: 20px;
     border-radius: 16px;
@@ -102,7 +106,7 @@ body {
     text-decoration: none;
     padding: 6px 6px;
     color: #ffffff;
-    box-shadow: 0 0 6px #ff5e00;
+    box-shadow: 0 0 20px #ff5e00;
     text-shadow: 0 0 2px #ffffff;
     font-size: 20px;
     border-radius: 16px;
@@ -179,11 +183,41 @@ p2 {
 }
 
 
-p3 {
-    font-size: 14px;
+p4 {
+    background: linear-gradient(to right, #ff1e5e, #ff0004);
+    text-decoration: none;
+    padding: 2px 4px;
     color: #ffffff;
+    box-shadow: 0 0 8px #ce0a00;
+    text-shadow: 0 0 2px #ffffff;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-left: 6px;
 }
 
+p7 {
+    background: linear-gradient(to right, #ff457a, #ff2a2d);
+    text-decoration: none;
+    padding: 2px 6px;
+    color: #ffffff;
+    box-shadow: 0 0 8px #ff0d00;
+    text-shadow: 0 0 2px #ffffff;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-left: 3px;
+}
+p3 {
+    font-size: 17px;
+    color: #ffffff;
+    margin: 3px;
+}
+
+p5 {
+    font-size: 18px;
+    color: #ffbb00;
+    margin: 3px;
+    text-shadow: 0 0 2px #ffa600;
+}
 
 h3 {
     font-size: 25px;

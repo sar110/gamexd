@@ -4,20 +4,72 @@
     padding: 0px;
 }
 
+.contain33 {
+    display: flex;
+    margin: 0px;
+    max-width: 400px;
+    width: 100%;
+    background: #15151500;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-padding: 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    scrollbar-color:rgb(244, 0, 61) ;
+} 
+
+ .card {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    background: #ffffff;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.card .image33 {
+    height: 150px;
+    width: 150px;
+    background: #ff0090;
+    border-radius: 50%;
+}
+
+.image33 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ff0051;
+}
+
+.card h2 {
+    margin-top: 25px;
+    color: #df0034f9;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card p {
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #111111;
+    text-align: center;
+}
+
 
 .orders {
-    background: linear-gradient(#ff8a67af,#ff7442b6,#ff3007b8);
+    background: linear-gradient(#ff982b,#ff6123b6,#fa0244ee); 
     padding: 8px 0px;
-}
+} 
 
 .img2 {
     background: linear-gradient(#ff86a8, #ff8077,#ff6193);
     padding: 8px 2px;
 }
 iframe{
-    box-shadow: 0 0 20px #ff9a4d;
+    box-shadow: 0 0 20px #ff6b02;
     border-radius: 6px;
-    border-color: #ff7b00;
+    border-color: #0e0e0e;
     border-style: ridge;
     padding: 0px;
     margin: 0px;
@@ -61,7 +113,8 @@ body {
     display: flex;
     align-items: center;
     box-shadow: 0 0 30px #fb8d52;
-    background: linear-gradient(#ff84a7,#ff8d8d, #ff746b);
+    background: linear-gradient(#ffb769,#ff7741b6,#ff2f67ee); 
+    /* background: linear-gradient(#ff84a7,#ff8d8d, #ff746b); */
 }
 
 .info {
@@ -76,7 +129,11 @@ body {
 .info3 {
     margin: 6px;
 }
-
+.info12 img{
+    border-radius: 50%;
+    box-shadow: 0 0 20px #00ff91;
+    margin: 8px;
+}
 .info a {
     background: linear-gradient(to right, #ac52fb, #6f27ff);
     text-decoration: none;
@@ -93,7 +150,7 @@ body {
     text-decoration: none;
     padding: 2px 5px;
     color: #ffffff;
-    box-shadow: 0 0 10px #8400ff;
+    box-shadow: 0 0 10px #440084;
     text-shadow: 0 0 2px #ffffff;
     font-size: 17px;
     border-radius: 14px;
@@ -384,9 +441,9 @@ button:hover {
 @media screen and (max-width:600px){
     
 iframe{
-    box-shadow: 0 0 20px #ff9a4d;
+    box-shadow: 0 0 20px #ff4d00;
     border-radius: 6px;
-    border-color: #ff7b00;
+    border-color: #1f1f1f;
     border-style: ridge;
     padding: 0px;
     margin: 0px;

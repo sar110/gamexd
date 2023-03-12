@@ -91,13 +91,12 @@ body {
 .info8 a {
     background: linear-gradient(to right, #ac52fb, #6f27ff);
     text-decoration: none;
-    padding: 2px 4px;
+    padding: 2px 5px;
     color: #ffffff;
-    box-shadow: 0 0 10px #3300ff;
+    box-shadow: 0 0 10px #8400ff;
     text-shadow: 0 0 2px #ffffff;
-    font-size: 16px;
+    font-size: 17px;
     border-radius: 14px;
-    margin-top: 2px;
     margin-left: 4px;
 }
 .infoone {
@@ -113,6 +112,13 @@ body {
     text-shadow: 0 0 2px #ffffff;
     font-size: 20px;
     border-radius: 16px;
+}
+
+.info9 a {
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 0 0 2px #ffffff;
+    font-size: 20px;
 }
 
 .info3 a {
@@ -204,9 +210,10 @@ p4 {
     color: #ffffff;
     box-shadow: 0 0 8px #cc0000;
     text-shadow: 0 0 2px #ffffff;
-    font-size: 16px;
+    font-size: 17px;
     border-radius: 12px;
     margin-left: 6px;
+    letter-spacing: 2px;
 }
 
 p7 {

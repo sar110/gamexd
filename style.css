@@ -6,7 +6,7 @@
 
 
 .orders {
-    background: linear-gradient(#ff6e97, #ff6358,#ff296d);
+    background: linear-gradient(#ff8a67af,#ff7442b6,#ff3007b8);
     padding: 8px 0px;
 }
 
@@ -15,9 +15,9 @@
     padding: 8px 2px;
 }
 iframe{
-    box-shadow: 0 0 20px #ff0055;
+    box-shadow: 0 0 20px #ff9a4d;
     border-radius: 6px;
-    border-color: #ff0077;
+    border-color: #ff7b00;
     border-style: ridge;
     padding: 0px;
     margin: 0px;
@@ -381,18 +381,17 @@ button:hover {
         color: #fff;
     }
 } */
-@media screen and (max-width:650px){
-    iframe{
-        box-shadow: 0 0 20px #ff0055;
-        border-radius: 6px;
-        border-color: #ff0077;
-        border-style: ridge;
-        padding: 0px;
-        width:420;
-        height:210;
-        margin: 0px;
-    }
+@media screen and (max-width:600px){
     
+iframe{
+    box-shadow: 0 0 20px #ff9a4d;
+    border-radius: 6px;
+    border-color: #ff7b00;
+    border-style: ridge;
+    padding: 0px;
+    margin: 0px;
+}
+
 .img2 img{
     box-shadow: 0 0 30px #ff0000;
     border-radius: 6px;

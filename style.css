@@ -21,7 +21,7 @@
     display: flex;
     flex: 0 0 100%;
     flex-direction: column;
-    background: #ffffff;
+    background-color: rgb(255, 255, 255);
     align-items: center;
     scroll-snap-align: start;
 }
@@ -56,6 +56,28 @@
     text-align: center;
 }
 
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  }
+   
+  .iframe-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 .orders {
     background: linear-gradient(#ff982b,#ff6123b6,#fa0244ee); 
@@ -65,14 +87,6 @@
 .img2 {
     background: linear-gradient(#ff86a8, #ff8077,#ff6193);
     padding: 8px 2px;
-}
-iframe{
-    box-shadow: 0 0 20px #ff6b02;
-    border-radius: 6px;
-    border-color: #0e0e0e;
-    border-style: ridge;
-    padding: 0px;
-    margin: 0px;
 }
 
 
@@ -102,7 +116,10 @@ body {
     box-sizing: border-box;
     overflow: hidden;
 }
-
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 .og img {
     width: 80px;
     margin: 0px;
@@ -417,56 +434,4 @@ button:hover {
     z-index: -1;
     background: linear-gradient(#ff256e, #ff1d21);
     transform: translateX(150px);
-}
-/* 
-@media only screen and (max-width:700px) {
-    nav ul {
-        width: 100%;
-        top: 75px;
-        right: 0;
-        z-index: 2;
-        background: linear-gradient(#ff2d7a, #ff006f);
-    }
-
-    nav ul li {
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    nav ul li {
-        color: #fff;
-    }
-} */
-@media screen and (max-width:600px){
-    
-iframe{
-    box-shadow: 0 0 20px #ff4d00;
-    border-radius: 6px;
-    border-color: #1f1f1f;
-    border-style: ridge;
-    padding: 0px;
-    margin: 0px;
-}
-
-.img2 img{
-    box-shadow: 0 0 30px #ff0000;
-    border-radius: 6px;
-    border-color: #ff0077;
-    border-style: ridge;
-    padding: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 460;
-    height: 230;
-}
-
-.img img{
-    margin: 0px;
-    padding: 0px;
-    width: 460;
-    height: 130;
-}
-
-
 }

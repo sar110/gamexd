@@ -3,7 +3,26 @@
     font-family: 'poppins', sans-serif;
     padding: 0px;
 }
+.orders h3{
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 0 0 1px #000000;
+    font-size: 14px;
+}
+.orders h1{
+    text-decoration: none;
+    color: #ff0066;
+    text-shadow: 0 0 1px #ff0040;
+    font-size: 18px;
+}
 
+
+.orders p{
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 0 0 1px #000000;
+    font-size: 14px;
+}
 .contain33 {
     display: flex;
     margin: 0px;
@@ -21,7 +40,7 @@
     display: flex;
     flex: 0 0 100%;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     align-items: center;
     scroll-snap-align: start;
 }

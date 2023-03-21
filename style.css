@@ -1,3 +1,33 @@
+.btn111 {
+    width: 300px;
+    height: 10vh;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.logo111 {
+    width: 300px;
+    height: 10vh;
+    background: #550381;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
+    padding: 10px;
+    line-height: 1.3rem;
+}
+
+.logo111 p {
+    width: 130px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.logo111 .fas {
+    font-size: 50px;
+}
+
 .product-card {
     display: flex;
     flex-wrap: wrap;
@@ -8,35 +38,35 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px #ccc;
     margin-bottom: 20px;
-  }
-  
-  .product-image {
+}
+
+.product-image {
     max-width: 100%;
     height: auto;
     margin-right: 20px;
-  }
-  
-  .product-details {
+}
+
+.product-details {
     flex: 1;
-  }
-  
-  .product-title {
+}
+
+.product-title {
     font-size: 24px;
     margin-top: 0;
-  }
-  
-  .product-description {
+}
+
+.product-description {
     font-size: 16px;
     margin-top: 0;
-  }
-  
-  .product-price {
+}
+
+.product-price {
     font-size: 20px;
     font-weight: bold;
     margin: 10px 0;
-  }
-  
-  .add-to-cart-button {
+}
+
+.add-to-cart-button {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -44,27 +74,29 @@
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .add-to-cart-button:hover {
+}
+
+.add-to-cart-button:hover {
     background-color: #0062cc;
-  }
-   
+}
+
 .navbar {
     width: 100%;
     display: flex;
     align-items: center;
     box-shadow: 0 0 30px #000000;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
-.new{
+
+.new {
     box-shadow: 0 0 10px #000000;
     background-color: rgb(23, 23, 23);
 }
-.new p18{
+
+.new p18 {
     font-size: 14px;
     color: #fff;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
@@ -197,10 +229,10 @@ footer a {
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
     scroll-padding: 30px;
-    scrollbar-color:rgb(244, 0, 61) ;
-} 
+    scrollbar-color: rgb(244, 0, 61);
+}
 
- .card {
+.card {
     display: flex;
     flex: 0 0 100%;
     flex-direction: column;
@@ -296,6 +328,7 @@ body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 nav {
     flex: 1;
     text-align: right;
@@ -349,15 +382,13 @@ nav ul li a:hover {
     margin: 8px;
 }
 
-.info a {
+.info img {
     background: linear-gradient(to right, #ac52fb, #6f27ff);
     text-decoration: none;
     padding: 6px 6px;
-    color: #ffffff;
     box-shadow: 0 0 20px #3300ff;
     text-shadow: 0 0 2px #ffffff;
-    font-size: 20px;
-    border-radius: 16px;
+    border-radius: 10px;
 }
 
 .info8 a {
@@ -376,19 +407,20 @@ nav ul li a:hover {
     display: flex;
 }
 
-.info2 a {
+.info2 img {
     background: linear-gradient(to right, #fb5283, #ff3527);
     text-decoration: none;
     padding: 6px 6px;
     color: #ffffff;
     box-shadow: 0 0 20px #ff006f;
     text-shadow: 0 0 2px #ffffff;
-    font-size: 20px;
-    border-radius: 16px;
+    border-radius: 10px;
 }
-.info12{
+
+.info12 {
     margin: 0;
 }
+
 .info12 a {
     background: linear-gradient(to right, #fb5283, #ff3527);
     text-decoration: none;
@@ -408,15 +440,12 @@ nav ul li a:hover {
     font-size: 20px;
 }
 
-.info3 a {
-    background: linear-gradient(to right, #2c2c2c, #070707);
+.info3 img {
+    background: linear-gradient(to right, #ffa2a2, #ff8a8a);
     text-decoration: none;
     padding: 6px 6px;
-    color: #ffffff;
-    box-shadow: 0 0 20px #252525;
-    text-shadow: 0 0 2px #ffffff;
-    font-size: 20px;
-    border-radius: 16px;
+    box-shadow: 0 0 20px #ffafaf;
+    border-radius: 10px;
 }
 
 .logo {
@@ -448,7 +477,7 @@ nav ul li a:hover {
 
 .col-1 h2 {
     font-size: 30px;
-    color: #ff8b0f ;
+    color: #ff8b0f;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -484,6 +513,7 @@ p14 {
     font-size: 14px;
     letter-spacing: 2px;
 }
+
 .select p {
     color: #000000;
     font-size: 22px;
@@ -512,6 +542,7 @@ p8 {
     font-size: 17px;
     margin: 0px;
 }
+
 
 h3 {
     font-size: 26px;
@@ -565,12 +596,14 @@ html {
     left: -40px;
     top: 8px;
 }
+
 .div2 {
     width: 35px;
     height: 5px;
     background-color: black;
     margin: 6px 0;
-  }
+}
+
 .col-2 {
     flex-basis: 60%;
     display: flex;
@@ -585,7 +618,7 @@ html {
 #menulist {
     overflow: hidden;
     transition: 0.5s;
-    background-color: white;
+    background-color: rgb(255, 0, 98);
     padding-bottom: 0px;
 }
 

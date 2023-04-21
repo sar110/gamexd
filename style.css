@@ -1,15 +1,29 @@
 .hed {
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, #ff6efd, #954aff, #0099ff, #00fffb);
+    background: linear-gradient(to right, #ff0084, #954aff, #0099ff, #00fffb);
+}
+.background{
+border-radius: 35px;
+padding: 2px;
+background: linear-gradient(to right, #ff0084, #954aff, #0099ff, #00fffb);
+background-origin: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.margin {
+    margin: 4px;
 }
 
 .hed img {
     background-color: whitesmoke;
     border-radius: 50%;
-    margin: 4px;
-    padding: 3px 3px;
-    box-shadow: 0 0 10px #101010;
+    margin: 0px;
+    padding: 0;
+    box-shadow: 0 0 0px #101010;
 }
 
 .hed a {
@@ -19,12 +33,12 @@
 .hed p {
     background: linear-gradient(to right, #242424e2, #161616d1);
     text-decoration: none;
-    padding: 6px 6px;
+    padding: 0px;
     color: #ffffff;
     font-size: 14px;
-    box-shadow: 0 0 10px #1d1d1d;
-    border-radius: 14px;
-    letter-spacing: 2px;
+    box-shadow: 0 0 0px #1d1d1d;
+    border-radius: 0px;
+    letter-spacing: 0px;
 }
 
 .txt555 p2 {
@@ -96,7 +110,10 @@
     font-weight: bold;
     margin: 10px 0;
 }
-
+.hr{
+    margin-left: 28px;
+    margin-right: 28px;
+}
 .add-to-cart-button {
     background-color: #007bff;
     color: #fff;
@@ -112,11 +129,12 @@
 }
 
 .navbar {
+    border-radius: 34px;
     width: 100%;
     display: flex;
+    padding: 2px;
     align-items: center;
-    background-color: white;
-    box-shadow: 0 0 20px rgb(255, 0, 81);
+    background-color: rgb(255, 255, 255);
 }
 
 .new {
@@ -304,11 +322,15 @@ footer a {
 }
 
 .iframe-container {
-    position: relative;
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
-    /* 16:9 aspect ratio */
+}
+
+.iframe-c2 {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
 }
 
 .tml {
@@ -334,22 +356,43 @@ footer a {
     text-align: center;
     text-shadow: 0 0 1px #cbcbcb;
 }
-
+.vidborder{
+    background: linear-gradient(to right, #ff0084, #954aff, #0099ff, #00fffb);
+    background-origin: border-box;
+    padding: 1px;
+}
 .iframe-container img {
-    position: absolute;
     top: 0;
+    border-radius: 14px;
+    left: 0;
+    width: 95%;
+    height: 95%;
+    align-items: center;
+    text-align: center;
+}
+
+.iframe-c2 img {
+    top: 0;
+    border-radius: 20px;
     left: 0;
     width: 100%;
     height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.iframe-container {
+    text-align: center;
 }
 
 .iframe-container iframe {
-    position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
     border-radius: 14px;
+    left: 0;
+    text-align: center;
 }
 
 .vid img {
@@ -361,29 +404,44 @@ footer a {
 }
 
 .orders {
-    background: linear-gradient(to right, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #e6e6e6);
-    box-shadow: 0 0 10px #000000;
     padding: 8px 0px;
-    border-top-left-radius: 14px;
     border-top-right-radius: 14px;
-
+    border-top-left-radius: 14px;
 }
-
 .img2 img {
-    box-shadow: 0 0 10px #ff0000;
-    border-color: #ff0077;
-    border-style: ridge;
-    padding: 0px;
+    padding: 2px;
     margin-left: 0px;
     margin-right: 0px;
     border-radius: 14px;
+    background: linear-gradient(to right, #ff0084, #954aff, #0099ff, #00fffb);
+    background-origin: border-box;
 }
-
+.heading{
+    text-align: center;
+}
+.heading p{
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+.heading p2{
+    color: rgb(255, 213, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+.img2 iframe {
+    padding: 2px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 14px;
+    background: linear-gradient(to right, #ff0084, #954aff, #0099ff, #00fffb);
+    background-origin: border-box;
+}
 body {
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-size: cover;
-    background-color: rgb(255, 255, 255);
+    background-color: #0c0013;
 }
 
 .container {
@@ -428,11 +486,9 @@ nav ul li a:hover {
 }
 
 .og img {
-    width: 55px;
-    margin: 0px;
+    width: 50px;
+    margin: 2px;
 }
-
-
 
 .info {
     margin: 6px;
@@ -481,28 +537,35 @@ nav ul li a:hover {
 }
 
 .info2 p {
-    background: linear-gradient(to right, #151515f0, #000000ee);
     text-decoration: none;
     padding: 2px 3px;
     color: #ffffff;
-    box-shadow: 0 0 20px #000000;
-    border-radius: 8px;
     text-align: center;
 }
 
-.og234 {
+
+.og234 img{
+    border-radius: 50%;
+    margin: 2px;
+    padding: 1px;
+    border: 2px #ff0059;
+    border-style: double;
+    box-shadow: 0 0 5px #000000;
+    background-color: #000000;
+}
+.alignall{
     display: flex;
 }
-
-.og234 img {
-    background-color: #000000;
-    border-radius: 50%;
-    padding: 2px 2px;
-    margin: 4px;
+.tittle{
+    display: flex;
 }
-
-.og234 p3 {
-    color: rgb(34, 34, 34);
+.tittle p3 {
+    color: rgb(243, 243, 243);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.tittle p{
+    color: yellow;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
 }
@@ -510,20 +573,22 @@ nav ul li a:hover {
 .info12 {
     margin: 0;
 }
-.info12 a{
+
+.info12 a {
     text-decoration: none;
 }
+
 .info12 p {
     background: linear-gradient(to right, #ff4e71, #ff0033);
     text-decoration: none;
-    padding: 4px 8px;
+    padding: 2px 4px;
     text-align: center;
     color: #ffffff;
     text-shadow: 0 0 2px #ffffff;
-    font-size: 20px;
+    font-size: 16px;
     border-radius: 14px;
     letter-spacing: 3px;
-    box-shadow: 0 0 10px #ff004c;
+    box-shadow: 0 0 6px #ff004c;
 }
 
 .info22 a {
@@ -671,16 +736,15 @@ p8 {
 
 h3 {
     font-size: 22px;
-    color: #0f0f0f;
-    text-shadow: 0 0 1px #656565;
-
-    font-family: 'poppins', sans-serif;
+    color: #0d0d0d;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
 }
 
 .h3 h3 {
     font-size: 22px;
-    color: #ff274b;
-    font-family: 'poppins', sans-serif;
+    color: #080808;
+    font-family: fantasy;
 }
 
 h4 {

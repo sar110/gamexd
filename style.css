@@ -1,19 +1,22 @@
-.hed{
- display: flex;
+.hed {
+    display: flex;
     align-items: center;
-    background: linear-gradient(to right, #ff6efd, #954aff,#0099ff,#00fffb);
+    background: linear-gradient(to right, #ff6efd, #954aff, #0099ff, #00fffb);
 }
-.hed img{
+
+.hed img {
     background-color: whitesmoke;
     border-radius: 50%;
     margin: 4px;
     padding: 3px 3px;
     box-shadow: 0 0 10px #101010;
 }
-.hed a{
+
+.hed a {
     text-decoration: none;
 }
-.hed p{
+
+.hed p {
     background: linear-gradient(to right, #242424e2, #161616d1);
     text-decoration: none;
     padding: 6px 6px;
@@ -23,13 +26,15 @@
     border-radius: 14px;
     letter-spacing: 2px;
 }
-.txt555 p2{
+
+.txt555 p2 {
     font-size: 20px;
     color: #151515;
     text-shadow: 0 0 1px #161616;
     font-family: 'poppins', sans-serif;
 
 }
+
 .logo111 {
     width: 300px;
     height: 10vh;
@@ -110,7 +115,8 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: rgb(238, 238, 238);
+    background-color: white;
+    box-shadow: 0 0 20px rgb(255, 0, 81);
 }
 
 .new {
@@ -352,24 +358,25 @@ footer a {
     margin: 2px;
     border-color: #000000;
     border: 2px;
-
 }
 
 .orders {
-    background-color: #ffffffec;
+    background: linear-gradient(to right, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #e6e6e6);
     box-shadow: 0 0 10px #000000;
     padding: 8px 0px;
-    border-radius: 14px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+
 }
 
 .img2 img {
     box-shadow: 0 0 10px #ff0000;
-    border-radius: 6px;
     border-color: #ff0077;
     border-style: ridge;
     padding: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    border-radius: 14px;
 }
 
 body {
@@ -482,23 +489,30 @@ nav ul li a:hover {
     border-radius: 8px;
     text-align: center;
 }
-.og234{
+
+.og234 {
     display: flex;
 }
-.og234 img{
+
+.og234 img {
     background-color: #000000;
     border-radius: 50%;
     padding: 2px 2px;
+    margin: 4px;
 }
-.og234 p3{
-color: rgb(34, 34, 34);
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 14px;
+
+.og234 p3 {
+    color: rgb(34, 34, 34);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
 }
+
 .info12 {
     margin: 0;
 }
-
+.info12 a{
+    text-decoration: none;
+}
 .info12 p {
     background: linear-gradient(to right, #ff4e71, #ff0033);
     text-decoration: none;
@@ -523,6 +537,7 @@ font-size: 14px;
     border-radius: 14px;
     letter-spacing: 3px;
 }
+
 .info9 a {
     text-decoration: none;
     color: #ffffff;
@@ -637,10 +652,12 @@ p5 {
     margin: 3px;
     text-shadow: 0 0 2px #ffa600;
 }
+
 .product-description {
     font-size: 14px;
     color: #202020;
 }
+
 p8 {
     background: linear-gradient(to right, #fb5283, #ff3527);
     padding: 6px 6px;
@@ -659,11 +676,13 @@ h3 {
 
     font-family: 'poppins', sans-serif;
 }
-.h3 h3{
+
+.h3 h3 {
     font-size: 22px;
     color: #ff274b;
     font-family: 'poppins', sans-serif;
 }
+
 h4 {
     font-size: 25px;
     color: #ffbb00;

@@ -272,8 +272,14 @@ footer a {
     text-shadow: 0 0 1px #000000;
     font-size: 14px;
 }
-
-
+.cot33{
+    text-align: center;
+}
+.cot33 img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
 .contain33 {
     display: flex;
     margin: 0px;
@@ -303,7 +309,7 @@ footer a {
     border-radius: 50%;
 }
 
-.image33 img {
+.cot3333 img {
     height: 100%;
     text-align: center;
     width: 100%;
@@ -468,12 +474,21 @@ footer a {
     background: linear-gradient(to right, #ff0084, #954aff, #0099ff, #00fffb);
     background-origin: border-box;
 }
-
+.cot333{
+text-align: center;
+}
+.cot333{
+    height: 150px;
+    text-align: center;
+    width: 150px;
+    background: #000000;
+    border-radius: 50%;
+}
 body {
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #12001d;
+    /* background-color: #12001d; */
 }
 
 .container {

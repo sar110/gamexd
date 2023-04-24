@@ -18,7 +18,11 @@ body {
 .margin {
     margin: 4px;
 }
-
+.navpageimg img{
+margin-top:2px;
+width:100;
+Height:40;
+}
 .hed img {
     background-color: whitesmoke;
     border-radius: 50%;

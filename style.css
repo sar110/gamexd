@@ -779,7 +779,13 @@ p5 {
     font-size: 14px;
     color: #202020;
 }
-
+.flextext{
+    display: flex;
+}
+.navpageimg img{
+    margin-top: 4px;
+    margin-left: 4px;
+}
 p8 {
     background: linear-gradient(to right, #fb5283, #ff3527);
     padding: 6px 6px;
@@ -794,6 +800,14 @@ p8 {
 h3 {
     font-size: 22px;
     color: #0d0d0d;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+.redh3 h3 {
+    font-size: 22px;
+    color: #ff003c;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 2px;
 }

@@ -3,7 +3,12 @@
     align-items: center;
     background: linear-gradient(to right, #ff0084, #954aff, #0099ff, #00fffb);
 }
-
+.firstyt{
+    text-align: center;
+}
+.firstyt img{
+    text-align: center;
+}
 .background {
     border-radius: 35px;
     padding: 2px;
@@ -503,35 +508,11 @@ body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+/* 
 nav {
     flex: 1;
     text-align: right;
-}
-
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 30px;
-}
-
-.menu-icon {
-    width: 25px;
-    cursor: pointer;
-    margin: 0px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 20px;
-    font-family: 'poppins', sans-serif;
-}
-
-nav ul li a:hover {
-    color: rgb(255, 0, 81);
-}
-
+} */
 .og img {
     width: 50px;
     margin: 2px;
@@ -619,6 +600,8 @@ nav ul li a:hover {
     color: rgb(243, 243, 243);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
+    text-align: left;
+    display: flex;
 }
 
 .tittle p {
@@ -685,11 +668,6 @@ nav ul li a:hover {
     width: 50px;
     cursor: pointer;
     margin: 30px 0;
-}
-
-.menu-icon {
-    width: 25px;
-    cursor: pointer;
 }
 
 .row {
@@ -792,9 +770,23 @@ p5 {
 .flextext{
     display: flex;
 }
+.iconlinks{
+    text-align: right;
+}
+.iconlinks a{
+    text-decoration: none;
+}
+.iconlinks img {
+    text-align: right;
+}
 .navpageimg img{
     margin-top: 4px;
-    margin-left: 4px;
+    margin-right: 50px;
+    margin-left: 8px;
+}
+.navpage2img2{
+    margin-top: 4px;
+    margin-left: 8px;
 }
 p8 {
     background: linear-gradient(to right, #fb5283, #ff3527);

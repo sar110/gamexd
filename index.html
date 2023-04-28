@@ -5,9 +5,97 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameXD</title>
+    <style>
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            display: block;
+            height: 3px;
+            text-align: right;
+            width: 25px;
+            margin-bottom: 5px;
+            background-color: #000000;
+        }
+
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav {
+                position: fixed;
+                top: 100px;
+                border-radius: 40px;
+                left: -100%;
+                height: 100%;
+                width: 100%;
+                background: #0a0a0ad5;
+            }
+
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            nav ul li a {
+                color: #141414;
+                background: linear-gradient(to right, #ffe6e6, #ffd4d4, #ff9d9d);
+                padding: 10px 20px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                border-radius: 5px;
+                text-align: center;
+                display: block;
+                transition: all 0.3s ease-in-out;
+            }
+
+            nav ul li a:hover,
+            nav ul li a.active {
+                color: #fff;
+                background-color: #333;
+            }
+
+            nav.active {
+                left: 0;
+            }
+        }
+
+        p60 {
+            color: #130021;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    </style>
 </head>
 
 <body background="Animated Club DJ Party Night Instagram Story.png">
+
     <div class="margin">
         <div class="background">
             <div class="navbar">
@@ -18,9 +106,27 @@
                 <div class="navpageimg">
                     <img src="graffitipngtext.png" width="100">
                 </div>
+                <div class="righton">
+                    <div class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
                 <nav>
-                    <ul id="menulist">
-                        <li><a href="merchandise.html"><img src="merhndise.png" width="35"></a></li>
+                    <ul>
+                        <li><a href="merchandise.html">
+                                <p60><b>Merchandise</b></p60>
+                            </a></li>
+                        <li><a href="#">
+                                <p60><b>Membership</b></p60>
+                            </a></li>
+                        <li><a href="help.html">
+                                <p60><b>Help</b></p60>
+                            </a></li>
+                        <li><a href="help.html">
+                                <p60><b>Feedback!</b></p60>
+                            </a></li>
                     </ul>
                 </nav>
             </div>
@@ -35,12 +141,6 @@
         </div>
     </div>
     <br>
-    <br>
-    <div class="highlighttext">
-        <div class="heading">
-            <p><b>If You Want To Join Our Exicting Events & Tournaments, So Join Our <p2>Membership</p2> Now!!!</b></p>
-        </div>
-    </div>
     <br>
     <br>
     <!-- <div class="container"> -->
@@ -96,7 +196,9 @@
     </div>
     <br> -->
     <br>
-    <div class="sidetextimg"><img src="png-transparent-minecraft-story-mode-season-two-video-game-rendering-minecraft-3d-computer-graphics-weapon-toy-removebg-preview.png"></div>
+    <div class="sidetextimg">
+        <img src="5553351.webp">
+    </div>
 
     <div class="heading">
         <p><b> Latest <p2>esports</p2> Matches </b></p>
@@ -126,46 +228,37 @@
     </div>
     <br>
     <br>
-    <br>
-    <div class="heading">
-        <p><b>eSports Teams</b></p>
-    </div>
-    <br>
-    <!-- <div class="orders">
-            <div class="iframe-container">
-                <div class="img2">
-                    
-                </div>
-            </div>
-        <br>
-        <br>
-
-        <br>
-        <br>
-        <div class="alignall">
-        <div class="og234">
-            <img src="IMG_20230419_104430__1_-removebg-preview (1).png"width="40">
-            </div>
-            <div class="tittle">
-            <p3><b> Ultimate PVP Challenge || Minecraft Tournament || Join The Battle Now ||</b></p3>
-            </div>
+    <div class="youtube">
+        <div class="firstyt">
+            <img src="youtube_318-566773.avif" width="70"><br>
+            <div class="heading">
+                <p><b>YouTube Gaming</b></p>
             </div>
             <br>
-        <div class="info12">
-            <a href="join.html"><span><p><b>Join The Battle</b></p></span></a>
+            <div class="orders">
+                <div class="iframe-container">
+                    <div class="img2">
+                        <a href="https://youtu.be/z2bEcHlnOQQ">
+                            <img src="Green Modern Bold Gaming YouTube Thumbnail.jpg">
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <div class="alignall">
+                    <div class="og234">
+                        <img src="IMG_20230419_104430__1_-removebg-preview (1).png" width="40">
+                    </div>
+                    <div class="tittle">
+                      <p3><b>Going To Nether || Minecraft || Hunter Boyz SMP || Victory Lover Gaming ||</b></p3>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
         </div>
-        </div> -->
-    <div class="cot33">
-        <img src="IMG_20230419_104430__1_-removebg-preview (1).png">
     </div>
-    <div class="heading">
-        <p><b>GameXD eSports</b></p>
-        <p3><b>Play With Strategy</b></p3>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
 
     <script>
 
@@ -195,6 +288,36 @@
         setInterval(nextImage, 3000);
 
 
+
+    </script>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        const sections = document.querySelectorAll('.section');
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
 
     </script>
     <!-- <br>

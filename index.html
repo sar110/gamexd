@@ -2,332 +2,494 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameXD</title>
+    <title>GameXD- Gaming Website</title>
     <style>
-        nav ul {
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            background: url(background1.jpg);
+            width: 100%;
+            height: auto;
+            margin: 0px;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        nav {
+            background: linear-gradient(37deg, #0101014f, #01010160, #010101c6);
+            position: fixed;
             display: flex;
-            flex-direction: row;
-            margin: 0;
-            padding: 0;
+            width: 100%;
+            height: 60px;
+            margin-top: 14px;
+            align-items: center;
         }
 
-        nav ul li {
-            list-style: none;
-            margin: 0 10px;
+        .logo h3 {
+            color: white;
+            font-family: sans-serif;
+            margin-left: 0px;
+            font-size: 26px;
         }
 
-        nav ul li a {
-            color: #fff;
+        .logo span {
+            color: rgb(255, 0, 85);
+            font-family: sans-serif;
+            margin-left: 0px;
+            font-size: 26px;
+            text-shadow: 0 0 2px rgb(255, 0, 85);
+        }
+
+        body {
+            background-color: rgb(7, 0, 12);
+        }
+
+        .logo2 h3 {
+            color: white;
+            font-family: sans-serif;
+            margin-left: 4px;
+            font-size: 26px;
+        }
+
+        .logo2 span {
+            color: rgb(255, 0, 85);
+            font-family: sans-serif;
+            margin-left: 0px;
+            font-size: 26px;
+            text-shadow: 0 0 2px rgb(255, 0, 85);
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 200px;
+            height: 100%;
+            background-color: rgb(8, 0, 8);
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar.show {
+            left: 0;
+        }
+
+        /* CSS code to style the content in the sidebar */
+        .sidebar h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* CSS code to adjust the main content area */
+        .main-content {
+            margin-left: 320px;
+            padding: 20px;
+        }
+
+        .sidebar a {
             text-decoration: none;
+            color: rgb(219, 219, 219);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
-        .menu-toggle {
-            display: none;
+        /* CSS code to style the toggle button */
+        .toggle-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
             cursor: pointer;
+            z-index: 9999;
+            color: white;
         }
 
-        .menu-toggle span {
-            display: block;
-            height: 3px;
-            text-align: right;
-            width: 25px;
-            margin-bottom: 5px;
-            background-color: #000000;
+        .lgimg {
+            align-items: center;
+            text-align: left;
         }
 
-
-        @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
-
-            nav {
-                position: fixed;
-                top: 100px;
-                border-radius: 40px;
-                left: -100%;
-                height: 100%;
-                width: 100%;
-                background: #0a0a0ad5;
-            }
-
-            nav ul {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                height: 100%;
-            }
-
-            nav ul li {
-                margin: 10px 0;
-            }
-
-            nav ul li a {
-                color: #141414;
-                background: linear-gradient(to right, #ffe6e6, #ffd4d4, #ff9d9d);
-                padding: 10px 20px;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                border-radius: 5px;
-                text-align: center;
-                display: block;
-                transition: all 0.3s ease-in-out;
-            }
-
-            nav ul li a:hover,
-            nav ul li a.active {
-                color: #fff;
-                background-color: #333;
-            }
-
-            nav.active {
-                left: 0;
-            }
+        .lgimg2 {
+            text-align: left;
+            align-items: center;
+            display: flex;
         }
 
-        p60 {
-            color: #130021;
+        .lgimg2 img {
+            width: 50px;
+            height: 50px;
+            margin: 2px;
+        }
+
+        .lgimg img {
+            width: 50px;
+            height: 50px;
+            margin-left: 12px;
+        }
+
+        .textcenter {
+            text-align: center;
+            align-items: center;
+        }
+
+        .textcenter img {
+            text-align: center;
+            width: 45%;
+            height: auto;
+        }
+
+        .headerwriter {
+            align-items: center;
+            text-align: center;
+        }
+
+        .headerwriter p {
+            color: rgb(249, 249, 249);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .headerwriter h2 {
+            color: rgb(245, 245, 245);
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: normal;
+            text-shadow: 0 0 2px rgb(0, 0, 0);
+        }
+
+        .headerwriter span {
+            color: rgb(255, 196, 0);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: normal;
+            text-shadow: 0 0 2px rgb(255, 162, 0);
+        }
+
+        .navimage {
+            align-items: center;
+            text-align: center;
+        }
+
+        .navimage img {
+            margin-left: 14px;
+            width: 100px;
+        }
+
+        .hr hr {
+            color: black;
+        }
+
+        .heading {
+            align-items: center;
+            text-align: center;
+        }
+
+        .heading h2 {
+            color: whitesmoke;
+            font-family: monospace;
+            text-align: center;
+        }
+
+        .heading span {
+            color: rgb(255, 0, 85);
+            font-family: monospace;
+        }
+
+        .background {
+            background: linear-gradient(to right, #ff0090, #d503ff, #6200ff, #00e5ff, #ffee00);
+            padding: 1px;
+        }
+
+        .bottom {
+            margin: 0 20px;
+            background-color: rgba(30, 30, 30, 0.599);
+            border-radius: 18px;
+        }
+
+        .heading p {
+            color: rgb(227, 227, 227);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            padding: 2 4px;
+            text-shadow: 0 0 2px black;
+        }
+
+        .m-one {
+            align-items: center;
+            text-align: right;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .m-one img {
+            width: 120px;
+            height: 120px;
+        }
+
+        .blurbg {
+            background: linear-gradient(105deg, #01010100, #1616163f, #63002687);
+        }
+
+        .m-one p {
+            color: #ffd000;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .m-zero {
+            align-items: center;
+            text-align: left;
+            display: flex;
+        }
+
+        .m-zero img {
+            width: 100px;
+            height: auto;
+        }
+
+        .m-zero p {
+            color: rgb(231, 231, 231);
+            text-align: left;
+            font-size: 28px;
+            font-weight: normal;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .m-zero span {
+            color: rgb(255, 179, 0);
+            text-align: left;
+            text-shadow: 0 0 2px rgb(255, 162, 0);
+            font-size: 28px;
+            font-weight: normal;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .m-one {
+            justify-content: space-between;
+            display: flex;
+        }
+
+        .m-one p4 {
+            color: white;
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .cover{
+            background-origin: border-box;
+            background-color: rgb(255, 0, 93);
+            padding: 10px 8px;
+            box-shadow: 0 3px rgb(249, 249, 249);
+            border-radius: 14px;
+            text-align: center;
+            margin-left: 34px;
+            align-items: center;
+        }
+        .downh{
+            text-align: left;
+            margin-left: 34px;
+        }
+        .downh p{
+            color: white;
+            text-shadow: 0 0 2px black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .downwardpage{
+            background-color: #01010199;
+        }
+        .dwpt p{
+            color: rgb(255, 157, 0);
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+            text-shadow: 0 0 2px black;
+            font-style: bold;
+            text-align: center;
+        }
+        .dwpt h4{
+            color: rgb(222, 222, 222);
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: bold;
+            font-size: 24px;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        .imagebnr{
+            text-align: center;
+            align-items: center;
+        }
+        .imagebnr img{
+            width: 88%;
+            height: 44%;
+            margin: 10px;
+            border-radius: 18px;
+            border: 2px rgb(255, 0, 76);
+            border-style: ridge;
+            box-shadow: 0 0 2px rgb(255, 0, 55);
+        }
+        .tittle {
+            text-align: center;
+        }
+        .tittle p{
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .tittle span{
+            color: rgb(255, 196, 0);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        footer{
+            background-color: #e3e3e3;
+        }
+        footer h1{
+            color: black;
+            font-size: 24px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+        }
+        footer p{
+            color: rgb(92, 92, 92);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
         }
     </style>
 </head>
 
-<body background="Animated Club DJ Party Night Instagram Story.png">
-
-    <div class="margin">
+<body>
+    <header>
         <div class="background">
-            <div class="navbar">
-                <div class="og">
+            <nav>
+                <div class="lgimg">
                     <img src="IMG_20230419_104430__1_-removebg-preview (1).png">
                 </div>
-                <h3>GameXD</h3>
-                <div class="navpageimg">
-                    <img src="graffitipngtext.png" width="100">
+                <div class="logo">
+                    <h3>
+                        Game<span>XD</span>
+                    </h3>
                 </div>
-                <div class="righton">
-                    <div class="menu-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                <div class="sidebar">
+                    <br>
+                    <br>
+                    <div class="lgimg2">
+                        <img src="IMG_20230419_104430__1_-removebg-preview (1).png">
+                        <div class="logo2">
+                            <h3>
+                                <b>Game<span>XD</span></b>
+                            </h3>
+                        </div>
                     </div>
+                    <br>
+                    <br>
+                    <a href="#">
+                        <h2>Membership</h2>
+                    </a> <br>
+                    <a href="#">
+                        <h2>Merchandise</h2>
+                    </a> <br>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="merchandise.html">
-                                <p60><b>Merchandise</b></p60>
-                            </a></li>
-                        <li><a href="#">
-                                <p60><b>Membership</b></p60>
-                            </a></li>
-                        <li><a href="help.html">
-                                <p60><b>Help</b></p60>
-                            </a></li>
-                        <li><a href="help.html">
-                                <p60><b>Feedback!</b></p60>
-                            </a></li>
-                    </ul>
-                </nav>
+                <div class="toggle-btn" onclick="toggleSidebar()">
+                    <!-- icon for the toggle button goes here -->
+                    &#9776;
+                </div>
+        </div>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="blurbg">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="textcenter">
+                <img src="ON____1_-removebg-preview.png">
             </div>
+            <div class="headerwriter">
+                <p>
+                    Join The Battle, Win The Game & Enjoy The Fun!!!
+                </p>
+                <br>
+                <h2>
+                    Play With <span>Strategy</span>
+                </h2>
+            </div>
+            <br>
+            <br>
+        </div>
+    </header>
+    <br>
+    <div class="bottom">
+        <div class="heading">
+            <br>
+            <h2>
+                Are U Interesting In <span>eSports</span>
+            </h2>
+            <br>
+            <p><b>Join GameXD To Play Awesome Tournaments & eSports Matches, Or Win Rewards. Try To Rank Your Team In
+                    The Top Of Score Board In GameXD</b></p>
+            <br>
         </div>
     </div>
-    <div class="slider-container">
-        <div class="slider">
-            <div class="iframe-c2">
-                <img src="10752575.jpg">
-                <img src="wallpapersden.com_minecraft-dungeons-4k-gaming-poster_3840x2160.jpg">
+    <br>
+    <div class="middle">
+        <div class="m-zero">
+            <img src="prize-img.png">
+            <p>Join The Battle <span>Now!</span></p>
+        </div>
+        <div class="m-one">
+            <div class="cover">
+            <p4>Apply For A Match</p4>
             </div>
+            <img src="character-1.png">
+        </div>
+        <div class="downh">
+            <p>Click On Apply To Join</p>
         </div>
     </div>
     <br>
     <br>
-    <br>
-    <!-- <div class="container"> -->
-    <!-- <div class="select">
-        <p><b>Available For Devices</b></p>
-    </div>
-    <br>
-    <br>
-    <div class="contain33">
-        <div class="card">
-            <div class="image33">
-                <img src="oppo.png" width="64">
-            </div>
-        </div>
-        <div class="card">
-            <div class="image33">
-                <img src="vivoooo.png" width="64">
-
-            </div>
-        </div>
-        <div class="card">
-            <div class="image33">
-
-                <img src="redmi222.png" width="64">
-
-            </div>
-        </div>
-        <div class="card">
-            <div class="image33">
-
-                <img src="smsung.png" width="64">
-
-            </div>
-        </div>
-        <div class="card">
-            <div class="image33">
-
-                <img src="Logo-Iphone.jpg" width="64">
-
-            </div>
-        </div>
-    </div>
-    <br> -->
-    <!-- <hr>
-    <br>
-    <div class="infoone">
-        <div class="info">
-            <a href="https://discord.gg/T9jEebE5W3"><img src="disord.png"width="50"></a>
-        </div>
-        <div class="info3">
-            <a href="#sh11"><img src="merhndise.png"width="50"></a>
-        </div>
-    </div>
-    <br> -->
-    <br>
-    <div class="sidetextimg">
-        <img src="5553351.webp">
-    </div>
-
-    <div class="heading">
-        <p><b> Latest <p2>esports</p2> Matches </b></p>
-    </div>
-    <br>
-    <div class="orders">
-        <div class="iframe-container">
-            <div class="img2">
-                <img src="Solo Tournament.png">
-            </div>
+    <div class="downwardpage">
+        <div class="dwpt">
+            <p>Check Out Our Next-</p>
+            <h4>
+                Gaming Tournaments!
+            </h4>
         </div>
         <br>
-        <div class="alignall">
-            <div class="og234">
-                <img src="IMG_20230419_104430__1_-removebg-preview (1).png" width="40">
-            </div>
-            <div class="tittle">
-                <p3><b> Ultimate PVP Challenge || Minecraft Tournament || Join The Battle Now ||</b></p3>
-            </div>
-        </div>
-        <br>
-        <div class="info12">
-            <a href="register.html"><span>
-                    <p><b>Join The Battle</b></p>
-                </span></a>
-        </div>
+<div class="imagebnr">
+    <img src="Solo Tournament.png">
+</div>
+<div class="tittle">
+<p>
+    Show Your Power <span>-17th May 2023-</span>
+</p>
+</div>
     </div>
     <br>
     <br>
-    <div class="youtube">
-        <div class="firstyt">
-            <img src="youtube_318-566773.avif" width="70"><br>
-            <div class="heading">
-                <p><b>YouTube Gaming</b></p>
-            </div>
-            <br>
-            <div class="orders">
-                <div class="iframe-container">
-                    <div class="img2">
-                        <a href="https://youtu.be/z2bEcHlnOQQ">
-                            <img src="Green Modern Bold Gaming YouTube Thumbnail.jpg">
-                        </a>
-                    </div>
-                </div>
-                <br>
-                <div class="alignall">
-                    <div class="og234">
-                        <img src="IMG_20230419_104430__1_-removebg-preview (1).png" width="40">
-                    </div>
-                    <div class="tittle">
-                      <p3><b>Going To Nether || Minecraft || Hunter Boyz SMP || Victory Lover Gaming ||</b></p3>
-                    </div>
-                </div>
-                <br>
-                <br>
-            </div>
-            <br>
-            <br>
-        </div>
-    </div>
-
-    <script>
-
-
-        const sliderImages = document.querySelectorAll(".slider img");
-        let currentImageIndex = 0;
-        sliderImages[currentImageIndex].classList.add("active");
-
-        function nextImage() {
-            sliderImages[currentImageIndex].classList.remove("active");
-            currentImageIndex = (currentImageIndex + 1) % sliderImages.length;
-            sliderImages[currentImageIndex].classList.add("active");
-            updateDots();
-        }
-
-        function updateDots() {
-            const dots = document.querySelectorAll(".slider nav button");
-            dots.forEach((dot, index) => {
-                if (index === currentImageIndex) {
-                    dot.classList.add("active");
-                } else {
-                    dot.classList.remove("active");
-                }
-            });
-        }
-
-        setInterval(nextImage, 3000);
-
-
-
-    </script>
-
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('nav');
-
-        menuToggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-        });
-
-        const sections = document.querySelectorAll('.section');
-        const navLinks = document.querySelectorAll('nav ul li a');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
-                    current = section.getAttribute('id');
-                }
-            });
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').substring(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-    </script>
-    <!-- <br>
+    <br>
     <footer>
-        <ul class="footer-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Help</a></li>
-        </ul>
-    </footer> -->
+        <br>
+        <h1>
+            About Us!
+        </h1>
+        <br>
+        <p>GameXD Is A Gaming Website That Provides Tournaments & eSports, Or Many Amazing Events.
+        </p>
+    </footer>
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('show');
+        }
+    </script>
 </body>
 
 </html>

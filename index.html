@@ -71,7 +71,7 @@
             left: -300px;
             width: 200px;
             height: 100%;
-            background-color: rgb(8, 0, 8);
+            background:linear-gradient(#090909,#01010196,#01010183,#000000b8,#00ff483f);
             padding: 10px;
             transition: all 0.3s ease;
         }
@@ -99,7 +99,7 @@
 
         .sidebar a {
             text-decoration: none;
-            color: rgb(219, 219, 219);
+            color: rgb(233, 233, 233);
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
@@ -306,7 +306,7 @@
             background-color: #01010199;
         }
         .dwpt p{
-            color: rgb(255, 157, 0);
+            color: rgb(255, 187, 0);
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 18px;
             text-shadow: 0 0 2px black;
@@ -314,12 +314,13 @@
             text-align: center;
         }
         .dwpt h4{
-            color: rgb(222, 222, 222);
-            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-style: bold;
+            color: rgb(219, 219, 219);
+            font-family:'Courier New', Courier, monospace;
+            font-style: italic;
             font-size: 24px;
-            letter-spacing: 2px;
+            letter-spacing: 0px;
             text-align: center;
+            text-shadow: 0 0 0px;
         }
         .imagebnr{
             text-align: center;
@@ -334,16 +335,36 @@
             border-style: ridge;
             box-shadow: 0 0 2px rgb(255, 0, 55);
         }
-        .tittle {
+        .tittle{
             text-align: center;
+            align-items: center;
         }
         .tittle p{
             color: white;
+            text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         .tittle span{
+            text-align: center;
             color: rgb(255, 196, 0);
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .flex p7{
+            color: rgb(246, 246, 246);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+            text-align: center;
+        }
+        .flex{
+            display: flex;
+            margin-left: 4%;
+            margin-right: 4%;
+        }
+        .tittle .green{
+            color: rgb(0, 255, 72);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            font-style: bold;
         }
         footer{
             background-color: #e3e3e3;
@@ -359,6 +380,21 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
         }
+        .joiner{
+            text-align: center;
+            align-items: center;
+            margin-left: 8px;
+        }
+        .joiner a{
+            text-decoration: none;
+            font-size: 18px;
+            padding: 4px 8px;
+            border-radius: 8px;
+            color: white;
+            background: linear-gradient(18deg,#00ff48d1,#00ff6e);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: bold;
+        }
     </style>
 </head>
 
@@ -371,11 +407,12 @@
                 </div>
                 <div class="logo">
                     <h3>
+                        <b>
                         Game<span>XD</span>
+                        </b>
                     </h3>
                 </div>
                 <div class="sidebar">
-                    <br>
                     <br>
                     <div class="lgimg2">
                         <img src="IMG_20230419_104430__1_-removebg-preview (1).png">
@@ -388,7 +425,7 @@
                     <br>
                     <br>
                     <a href="#">
-                        <h2>Membership</h2>
+                        <h2><i>Membership</i></h2>
                     </a> <br>
                     <a href="#">
                         <h2>Merchandise</h2>
@@ -458,9 +495,11 @@
     <br>
     <div class="downwardpage">
         <div class="dwpt">
-            <p>Check Out Our Next-</p>
+            <p><b>Check Out Our Next-</b></p>
             <h4>
+              <b>
                 Gaming Tournaments!
+              </b>
             </h4>
         </div>
         <br>
@@ -469,8 +508,15 @@
 </div>
 <div class="tittle">
 <p>
-    Show Your Power <span>-17th May 2023-</span>
-</p>
+    Show Your Power <span>-17th May 2023-</span> 
+    </p>
+   <br>
+   <div class="flex">
+   <p><b>Game-<span class="green"><b>Minecraft</b></span> Entry-<span>Solo/PVP</span></b></p>
+<div class="joiner">
+    <a href="#"><b>Join</b></a>
+    </div>
+    </div>
 </div>
     </div>
     <br>
@@ -479,7 +525,9 @@
     <footer>
         <br>
         <h1>
+        <b>
             About Us!
+        </b>
         </h1>
         <br>
         <p>GameXD Is A Gaming Website That Provides Tournaments & eSports, Or Many Amazing Events.

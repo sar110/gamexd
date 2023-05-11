@@ -33,6 +33,7 @@
 
         .logo h3 {
             color: white;
+            font-weight: 800;
             font-family: sans-serif;
             margin-left: 0px;
             font-size: 26px;
@@ -42,6 +43,7 @@
             color: rgb(255, 0, 85);
             font-family: sans-serif;
             margin-left: 0px;
+            font-weight: 800;
             font-size: 26px;
             text-shadow: 0 0 2px rgb(255, 0, 85);
         }
@@ -157,6 +159,8 @@
             color: rgb(249, 249, 249);
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 18px;
+            font-weight: 700;
+            text-shadow: 0 4px black;
             font-style: italic;
         }
 
@@ -297,6 +301,7 @@
             text-align: left;
             margin-left: 34px;
         }
+
         .downh p{
             color: white;
             text-shadow: 0 0 2px black;
@@ -395,6 +400,66 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-style: bold;
         }
+
+        .slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide222 {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.slide222.active {
+  display: block;
+}
+.gears{
+    text-align: center;
+    align-items: center;
+}
+.gears h3{
+    color: white;
+    text-shadow: 0 0 4px rgb(0, 0, 0);
+    font-size: 28px;
+    letter-spacing: 3px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+    font-weight: 800px;
+    text-align: center;
+}
+.gears p{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+.gcard{
+    text-align: center;
+    align-items: center;
+}
+.gcard img{
+    width: 240px;
+    height: auto;
+    border-top-left-radius: 26px;
+    border-end-end-radius: 26px;
+}
+.order222 a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 200, 0);
+    border-top-left-radius: 10px;
+    border-end-end-radius: 10px;
+    padding:6px 12px;
+    box-shadow: 0 0 2px rgb(255, 174, 0);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style:bold;
+    text-shadow: 0 0 1px rgb(255, 255, 255);
+}
     </style>
 </head>
 
@@ -514,13 +579,42 @@
    <div class="flex">
    <p><b>Game-<span class="green"><b>Minecraft</b></span> Entry-<span>Solo/PVP</span></b></p>
 <div class="joiner">
-    <a href="#"><b>Join</b></a>
+    <a href="register.html"><b>Join</b></a>
     </div>
     </div>
 </div>
     </div>
+    <br>      
+<br>
+<div class="gears">
+    <h3>
+        <b>
+            Our Gears
+        </b>
+    </h3>
+    <br>
+    <p><i>20% Off For First Time Purchase</i></p>
     <br>
     <br>
+    <div class="gbg">
+       <div class="gcard">
+        <img src="Gaming-Finger-Sleeve-Game-Controller-Sweatproof-Gloves-Breathable-Fingertips-For-Mobile-Games-Touch-Screen-Finger-Cots.jpg_640x640.jpg">
+        <br>
+        <p2><b>Lorem, ipsum dolor sit amet consectetur adipisicing</b></p2>
+        <br>
+        <div class="order222">
+         <a href="buy.html">Order Now</a>
+        </div>
+        <br>
+        <img src="Gaming-Finger-Sleeve-Game-Controller-Sweatproof-Gloves-Breathable-Fingertips-For-Mobile-Games-Touch-Screen-Finger-Cots.jpg_640x640.jpg" alt="">
+       </div>
+       <br>
+       <div class="order222">
+        <a href="buy.html">Order Now</a>
+       </div>
+    </div>
+</div>
+<br>
     <br>
     <footer>
         <br>
@@ -537,7 +631,8 @@
         function toggleSidebar() {
             document.querySelector('.sidebar').classList.toggle('show');
         }
-    </script>
+        </script>
+      
 </body>
 
 </html>

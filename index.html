@@ -325,10 +325,11 @@
 
         .dwpt h4 {
             color: rgb(219, 219, 219);
-            font-family: 'Courier New', Courier, monospace;
-            font-style: italic;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style:bold;
             font-size: 24px;
             letter-spacing: 0px;
+            text-shadow: none;
             text-align: center;
             text-shadow: 0 0 0px;
         }
@@ -437,7 +438,6 @@
         .gears {
             text-align: center;
             align-items: center;
-            background: linear-gradient(rgba(0, 0, 0, 0.511),rgba(0, 0, 0, 0.61),rgba(0, 255, 110, 0.284));
         }
 
         .gears h3 {
@@ -490,7 +490,7 @@
         }
 
         .gcard p2 {
-            color: rgb(222, 222, 222);
+            color: rgb(255, 191, 0);
             text-align: center;
             font-size: 18px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -501,6 +501,38 @@
             text-align: center;
             font-size: 14px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .gcard span{
+            color: rgb(255, 0, 25);
+            text-align: center;
+            text-shadow: 0 0 4px rgb(255, 0, 55);
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .dwnl{
+            margin-top: 12px;
+         text-align: center;
+         align-items: center;
+        }
+        .dwnl p{
+            margin-top: 8px;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: bold;
+            font-size: 16px;
+        }
+        .dwnl a {
+            text-decoration: none;
+            font-size: 12px;
+            padding: 3px 6px;
+            border-radius: 8px;
+            color: white;
+            background: linear-gradient(to right, #14ff57d1, #00ff6e);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: bold;
+        }
+        .cover a{
+            text-decoration: none;
         }
     </style>
 </head>
@@ -590,7 +622,7 @@
         </div>
         <div class="m-one">
             <div class="cover">
-                <p4>Apply For A Match</p4>
+               <a href="register.html"><p4>Apply For A Match</p4></a> 
             </div>
             <img src="character-1.png">
         </div>
@@ -619,12 +651,15 @@
             </p>
             <br>
             <div class="flex">
-                <p><b>Game-<span class="green"><b>Minecraft</b></span> Entry-<span>Solo/PVP</span></b></p>
+                <p><b>Game-<span class="green"><b>Minecraft</b></span> Entry-<span>Solo/PVP</span></b></p> 
                 <div class="joiner">
                     <a href="register.html"><b>Join</b></a>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="dwnl">
+        <p><b>Play Minecraft For Free <a href="#">Download</a></b></p>
     </div>
     <br>
     <br>
@@ -647,7 +682,7 @@
                 <br>
                 <p2><b>Gaming Finger Sleeves</b></p2>
                 <br>
-                <p3>Price-$30 Product Code-1101</p3>
+                <p3>Price-<span>$30</span> Product Code-1101</p3>
                 <br>
                 <br>
                 <div class="order222">
@@ -666,7 +701,11 @@
         </h1>
         <br>
         <p>GameXD Is A Gaming Website That Provides Tournaments & eSports, Or Many Amazing Events.
+            <br>
+            <br>
         </p>
+        <br>
+        <br>
     </footer>
     <script>
         function toggleSidebar() {

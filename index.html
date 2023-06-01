@@ -409,8 +409,9 @@
         }
 
         footer {
-        background-color:  rgb(7, 0, 12);
+            background-color: rgb(7, 0, 12);
         }
+    
 
         footer h1 {
             color: rgb(255, 200, 0);
@@ -606,8 +607,6 @@
 
 
         .product-card {
-            display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
@@ -632,13 +631,17 @@
             text-align: center;
             align-items: center;
         }
-        .product-title p{
-            color: rgb(34, 34, 34);
+
+        .product-title p {
+            color: rgb(30, 30, 30);
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight:bolder;
+            font-weight: bolder;
             font-style: normal;
         }
-
+       .product-description{
+        text-align: center;
+        align-items: center;
+       }
         .product-description {
             font-size: 14px;
             margin-top: 0;
@@ -759,18 +762,50 @@
         }
 
         .footertext h1 {
-            color: orange;
+            color: rgb(19, 19, 19);
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: bolder;
-            margin-left: 10px;
-            font-size: 28px;
+            font-weight: bolder;;
+            font-size: 24px;
         }
-        .mainhr hr{
+
+        .footertext p{
+            color: rgb(17, 17, 17);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+        }
+        .mainhr hr {
             rotate: -4deg;
             margin: 0px;
-            box-shadow: 0 0 8px rgba(255, 166, 0, 0.675);
-            margin-bottom: 4px;
+            box-shadow: 0 4px rgba(255, 255, 255, 0.541);
         }
+
+        .mainhr2 hr {
+            rotate: -4deg;
+            margin: 0px;
+            margin-left: 20%;
+            color: #ffffff3b;
+
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.675);
+        }
+
+        .mainhr3 hr {
+            rotate: -4deg;
+            margin: 0px;
+            color: #ffffff3b;
+
+            margin-left: 34%;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.675);
+        }
+
+        .mainhr4 hr {
+            rotate: -4deg;
+            color: #ffffff3b;
+
+            margin: 0px;
+            margin-left: 44%;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.675);
+        }
+
     </style>
 </head>
 
@@ -940,61 +975,19 @@
         <br>
         <p3><b>Minecraft <a href="#">Download</a></b></p3>
     </div>
-    <div class="gears">
-        <br>
-        <br>
-        <h3>
-            <b>Our Gears</b>
-        </h3>
-        <br>
-        <p><i>20% Off For First Time Purchase</i></p>
-        <br>
         <br>
         <br>
         <div class="product-card">
-            <img src="Gaming-Finger-Sleeve-Game-Controller-Sweatproof-Gloves-Breathable-Fingertips-For-Mobile-Games-Touch-Screen-Finger-Cots.jpg_640x640.jpg"
-                class="product-image" width="150">
-            <div class="product-details">
-                
-                <div class="product-title"><p><b>Gaming Finger Sleeves</b></p></div>
-                <p2 class="product-description">Gaming Accessories</p2><br>
-                <p2 class="product-description">Product Code-11</p2><br>
-                <p14 class="product-price">₹30.00</p14><br><br>
-                <div class="buybutton">
-                    <a href="buy.html">Buy</a>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="mainhr">
-            <hr color="orange">
-            <hr color="orange">
+           <div class="footertext">
+         <h1><b>About Us!</b></h1>
+           </div>
+           <br>
+           <div class="footertext">
+            <p><b>GameXD Is A Gaming Or Entertainment Website That Provide Gaming Tournaments,Quiz & A Lot Of Fun</b></p>
+           </div>
         </div>
         <br>
         <br>
-        <footer>
-            <div class="footerimg">
-                <div class="footertext">
-                    <h1>
-                        <b>
-                            About Us!
-                        </b>
-                    </h1>
-                </div>
-                <img src="character-1.png">
-            </div>
-            <br>
-            <p28>GameXD Is A Gaming Website That Provides Tournaments & eSports, Or Many Amazing Events.
-            </p28>
-            <br>
-            <h1><b>Contact</b></h1>
-            <br>
-            <p28><b>For Contact Or Feedback! Message Us On: <br>
-                    <span>contact.gamexd@gmail.com</span>
-                </b></p28>
-                <br>
-                <br>
-        </footer>
         <script>
             function toggleSidebar() {
                 document.querySelector('.sidebar').classList.toggle('show');
